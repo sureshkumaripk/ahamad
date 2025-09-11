@@ -23,54 +23,59 @@ export default function Home() {
           #10b981 75%, 
           #059669 100%)`
       }}>
-        {/* Background Pattern */}
+        {/* Enhanced Background Pattern */}
         <div className="absolute inset-0 opacity-10">
-          <div className="absolute top-20 left-10 w-32 h-32 border border-white/20 rounded-2xl rotate-12 animate-pulse" style={{animationDuration: '4s'}}></div>
-          <div className="absolute top-40 right-20 w-24 h-24 border border-white/20 rounded-xl -rotate-6 animate-bounce" style={{animationDuration: '6s', animationDelay: '1s'}}></div>
-          <div className="absolute bottom-32 left-32 w-28 h-28 border border-white/20 rounded-2xl rotate-45 animate-ping" style={{animationDuration: '8s', animationDelay: '2s'}}></div>
-          <div className="absolute bottom-20 right-16 w-20 h-20 border border-white/20 rounded-xl -rotate-12 animate-pulse" style={{animationDuration: '5s', animationDelay: '0.5s'}}></div>
+          <div className="absolute top-20 left-10 w-32 h-32 border border-white/20 rounded-2xl rotate-12 animate-pulse" style={{animationDuration: '6s'}}></div>
+          <div className="absolute top-40 right-20 w-24 h-24 border border-white/20 rounded-xl -rotate-6 animate-bounce" style={{animationDuration: '8s', animationDelay: '1s'}}></div>
+          <div className="absolute bottom-32 left-32 w-28 h-28 border border-white/20 rounded-2xl rotate-45 animate-ping" style={{animationDuration: '10s', animationDelay: '2s'}}></div>
+          <div className="absolute bottom-20 right-16 w-20 h-20 border border-white/20 rounded-xl -rotate-12 animate-pulse" style={{animationDuration: '7s', animationDelay: '0.5s'}}></div>
+          
+          {/* Additional Floating Elements */}
+          <div className="absolute top-1/3 left-1/4 w-16 h-16 bg-white/5 rounded-full animate-bounce" style={{animationDuration: '9s', animationDelay: '3s'}}></div>
+          <div className="absolute bottom-1/3 right-1/4 w-12 h-12 bg-white/8 rounded-full animate-pulse" style={{animationDuration: '8s', animationDelay: '1.5s'}}></div>
+          <div className="absolute top-2/3 left-1/6 w-8 h-8 bg-white/10 rounded-full animate-ping" style={{animationDuration: '12s', animationDelay: '4s'}}></div>
         </div>
 
         <div className="container-custom relative z-10 text-white">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
             {/* Left Content */}
             <div className="space-y-8">
-              <div className="inline-flex items-center space-x-3 bg-gradient-to-r from-yellow-400/30 to-orange-400/30 backdrop-blur-sm rounded-full px-8 py-4 border-2 border-yellow-300/40 shadow-xl animate-bounce" style={{animationDuration: '2s'}}>
-                <Building size={24} className="text-yellow-300 animate-spin" style={{animationDuration: '4s'}} />
-                <span className="text-base font-bold tracking-wider text-yellow-100">🏆 LEADING BUSINESS GROUP</span>
+              <div className="inline-flex items-center space-x-2 bg-white/20 backdrop-blur-sm rounded-full px-6 py-3 border border-white/30 animate-pulse" style={{animationDuration: '4s'}}>
+                <Building size={20} className="animate-bounce" style={{animationDuration: '3s', animationDelay: '0.5s'}} />
+                <span className="text-sm font-medium tracking-wide">LEADING BUSINESS GROUP</span>
               </div>
 
               <div className="space-y-4">
-                <h1 className="text-5xl md:text-6xl lg:text-7xl font-black leading-tight bg-gradient-to-r from-yellow-300 via-orange-300 to-green-300 bg-clip-text text-transparent animate-pulse" style={{animationDuration: '4s', animationDelay: '0.5s'}}>
-                  🚀 Construction & Agricultural Excellence
+                <h1 className="text-5xl md:text-6xl lg:text-7xl font-bold leading-tight text-white animate-pulse" style={{animationDuration: '5s', animationDelay: '1s'}}>
+                  Construction & Agricultural Excellence
                 </h1>
               </div>
 
-              <p className="text-xl md:text-2xl text-white font-medium leading-relaxed bg-black/20 backdrop-blur-sm rounded-2xl p-6 border border-white/30 shadow-xl animate-pulse" style={{animationDuration: '5s', animationDelay: '1s'}}>
-                Two specialized companies delivering <span className="text-yellow-300 font-bold">premium solutions</span> - 
-                <span className="text-blue-300 font-bold"> Ahamad & Co</span> for construction materials 
-                and <span className="text-green-300 font-bold"> AHAMAD Agencies</span> for agricultural tools.
+              <p className="text-xl md:text-2xl text-blue-100 leading-relaxed animate-pulse" style={{animationDuration: '6s', animationDelay: '2s'}}>
+                Two specialized companies delivering <span className="text-white font-semibold">premium solutions</span> - 
+                <span className="text-blue-200 font-semibold"> Ahamad & Co</span> for construction materials 
+                and <span className="text-green-200 font-semibold"> AHAMAD Agencies</span> for agricultural tools.
               </p>
 
-              {/* Enhanced Stats */}
+              {/* Animated Stats */}
               <div className="grid grid-cols-2 gap-6">
-                <div className="text-center bg-gradient-to-br from-blue-500/30 to-blue-600/30 backdrop-blur-sm rounded-2xl p-6 border-2 border-blue-300/40 shadow-xl hover:scale-110 transition-all duration-300 animate-bounce" style={{animationDuration: '3s', animationDelay: '2s'}}>
-                  <div className="text-4xl font-black text-yellow-300">505+</div>
-                  <div className="text-base font-bold text-white">Premium Products</div>
+                <div className="text-center bg-white/10 backdrop-blur-sm rounded-2xl p-6 border border-white/20 hover:scale-105 transition-all duration-300 animate-pulse" style={{animationDuration: '4s', animationDelay: '3s'}}>
+                  <div className="text-3xl font-bold text-white">505+</div>
+                  <div className="text-sm text-blue-200">Premium Products</div>
                 </div>
-                <div className="text-center bg-gradient-to-br from-green-500/30 to-green-600/30 backdrop-blur-sm rounded-2xl p-6 border-2 border-green-300/40 shadow-xl hover:scale-110 transition-all duration-300 animate-bounce" style={{animationDuration: '3s', animationDelay: '2.5s'}}>
-                  <div className="text-4xl font-black text-yellow-300">15+</div>
-                  <div className="text-base font-bold text-white">Years Excellence</div>
+                <div className="text-center bg-white/10 backdrop-blur-sm rounded-2xl p-6 border border-white/20 hover:scale-105 transition-all duration-300 animate-pulse" style={{animationDuration: '4s', animationDelay: '3.5s'}}>
+                  <div className="text-3xl font-bold text-white">15+</div>
+                  <div className="text-sm text-blue-200">Years Excellence</div>
                 </div>
               </div>
 
-              {/* Enhanced CTA Buttons */}
-              <div className="flex flex-col sm:flex-row gap-6">
-                <Link href="/ahamad-co" className="bg-gradient-to-r from-blue-500 to-blue-600 text-white px-10 py-5 rounded-2xl font-bold text-lg hover:from-blue-400 hover:to-blue-500 transition-all duration-300 shadow-2xl hover:shadow-3xl hover:scale-110 hover:-translate-y-2 border-2 border-blue-300/50 animate-bounce" style={{animationDuration: '2s', animationDelay: '3s'}}>
-                  🏗️ Construction Materials
+              {/* Animated CTA Buttons */}
+              <div className="flex flex-col sm:flex-row gap-4">
+                <Link href="/ahamad-co" className="bg-white text-blue-600 px-8 py-4 rounded-2xl font-semibold hover:bg-blue-50 transition-all duration-300 shadow-lg hover:shadow-xl hover:scale-105 hover:-translate-y-1 animate-pulse" style={{animationDuration: '5s', animationDelay: '4s'}}>
+                  Construction Materials
                 </Link>
-                <Link href="/ahamad-agencies" className="bg-gradient-to-r from-green-500 to-green-600 text-white px-10 py-5 rounded-2xl font-bold text-lg hover:from-green-400 hover:to-green-500 transition-all duration-300 shadow-2xl hover:shadow-3xl hover:scale-110 hover:-translate-y-2 border-2 border-green-300/50 animate-bounce" style={{animationDuration: '2s', animationDelay: '3.5s'}}>
-                  🌱 Agricultural Tools
+                <Link href="/ahamad-agencies" className="bg-white/20 backdrop-blur-sm border border-white/30 px-8 py-4 rounded-2xl font-semibold hover:bg-white/30 transition-all duration-300 hover:scale-105 hover:-translate-y-1 animate-pulse" style={{animationDuration: '5s', animationDelay: '4.5s'}}>
+                  Agricultural Tools
                 </Link>
               </div>
             </div>
@@ -78,110 +83,114 @@ export default function Home() {
             {/* Right Side - Products Showcase */}
             <div className="flex justify-center lg:justify-end">
               <div className="max-w-lg w-full">
-                <div className="text-center mb-8 bg-gradient-to-r from-white/20 to-white/10 backdrop-blur-sm rounded-3xl p-6 border-2 border-white/30 shadow-xl animate-bounce" style={{animationDuration: '2s', animationDelay: '4s'}}>
-                  <h2 className="text-3xl md:text-4xl font-black mb-4 bg-gradient-to-r from-yellow-300 via-orange-300 to-pink-300 bg-clip-text text-transparent">
-                    ✨ Our Premium Brands
+                <div className="text-center mb-8 animate-pulse" style={{animationDuration: '4s', animationDelay: '5s'}}>
+                  <h2 className="text-2xl md:text-3xl font-bold mb-4 text-white">
+                    Our Premium Brands
                   </h2>
-                  <div className="w-32 h-2 bg-gradient-to-r from-yellow-400 via-orange-400 to-pink-400 mx-auto rounded-full animate-pulse shadow-lg" style={{animationDuration: '2s', animationDelay: '4.5s'}}></div>
+                  <div className="w-24 h-1 bg-blue-200 mx-auto rounded-full animate-pulse" style={{animationDuration: '3s', animationDelay: '5.5s'}}></div>
                 </div>
 
                 <div className="grid grid-cols-2 md:grid-cols-3 gap-4">
                   {/* Tata Shaktee */}
-                  <div className="bg-gradient-to-br from-white/20 to-white/10 backdrop-blur-sm rounded-3xl p-5 text-center border-2 border-white/30 hover:border-yellow-300/50 hover:scale-110 transition-all duration-500 shadow-xl hover:shadow-2xl animate-bounce" style={{animationDuration: '2s', animationDelay: '5s'}}>
-                    <div className="w-14 h-14 bg-gradient-to-br from-white to-gray-100 rounded-2xl p-2 mx-auto mb-3 shadow-lg hover:rotate-6 transition-transform duration-300">
+                  <div className="bg-white/10 backdrop-blur-sm rounded-2xl p-4 text-center border border-white/20 hover:bg-white/20 hover:scale-105 transition-all duration-300 animate-pulse" style={{animationDuration: '4s', animationDelay: '6s'}}>
+                    <div className="w-12 h-12 bg-white rounded-xl p-2 mx-auto mb-3 hover:rotate-3 transition-transform duration-300">
                       <Image
                         src="/images/products/tata-shaktee-logo.png"
                         alt="Tata Shaktee"
-                        width={56}
-                        height={56}
+                        width={48}
+                        height={48}
                         className="w-full h-full object-contain"
                       />
                     </div>
-                    <h4 className="font-black text-sm mb-1 text-yellow-200">Tata Shaktee</h4>
-                    <p className="text-xs text-white font-medium">🏠 GC Sheets</p>
+                    <h4 className="font-bold text-sm mb-1 text-white">Tata Shaktee</h4>
+                    <p className="text-xs text-blue-200">GC Sheets</p>
                   </div>
 
                   {/* Durashine */}
-                  <div className="bg-gradient-to-br from-white/20 to-white/10 backdrop-blur-sm rounded-3xl p-5 text-center border-2 border-white/30 hover:border-orange-300/50 hover:scale-110 transition-all duration-500 shadow-xl hover:shadow-2xl animate-bounce" style={{animationDuration: '2s', animationDelay: '5.5s'}}>
-                    <div className="w-14 h-14 bg-gradient-to-br from-white to-gray-100 rounded-2xl p-2 mx-auto mb-3 shadow-lg hover:rotate-6 transition-transform duration-300">
+                  <div className="bg-white/10 backdrop-blur-sm rounded-2xl p-4 text-center border border-white/20 hover:bg-white/20 hover:scale-105 transition-all duration-300 animate-pulse" style={{animationDuration: '4s', animationDelay: '6.5s'}}>
+                    <div className="w-12 h-12 bg-white rounded-xl p-2 mx-auto mb-3 hover:rotate-3 transition-transform duration-300">
                       <Image
                         src="/images/products/durashine-logo.png"
                         alt="Durashine"
-                        width={56}
-                        height={56}
+                        width={48}
+                        height={48}
                         className="w-full h-full object-contain"
                       />
                     </div>
-                    <h4 className="font-black text-sm mb-1 text-orange-200">Durashine</h4>
-                    <p className="text-xs text-white font-medium">🎨 Color Coated</p>
+                    <h4 className="font-bold text-sm mb-1 text-white">Durashine</h4>
+                    <p className="text-xs text-blue-200">Color Coated</p>
                   </div>
 
                   {/* Tata Kosh */}
-                  <div className="bg-gradient-to-br from-white/20 to-white/10 backdrop-blur-sm rounded-3xl p-5 text-center border-2 border-white/30 hover:border-blue-300/50 hover:scale-110 transition-all duration-500 shadow-xl hover:shadow-2xl animate-bounce" style={{animationDuration: '2s', animationDelay: '6s'}}>
-                    <div className="w-14 h-14 bg-gradient-to-br from-white to-gray-100 rounded-2xl p-2 mx-auto mb-3 shadow-lg hover:rotate-6 transition-transform duration-300">
+                  <div className="bg-white/10 backdrop-blur-sm rounded-2xl p-4 text-center border border-white/20 hover:bg-white/20 hover:scale-105 transition-all duration-300 animate-pulse" style={{animationDuration: '4s', animationDelay: '7s'}}>
+                    <div className="w-12 h-12 bg-white rounded-xl p-2 mx-auto mb-3 hover:rotate-3 transition-transform duration-300">
                       <Image
                         src="/images/products/tata-kosh-logo.png"
                         alt="Tata Kosh"
-                        width={56}
-                        height={56}
+                        width={48}
+                        height={48}
                         className="w-full h-full object-contain"
                       />
                     </div>
-                    <h4 className="font-black text-sm mb-1 text-blue-200">Tata Kosh</h4>
-                    <p className="text-xs text-white font-medium">📦 GP Sheets</p>
+                    <h4 className="font-bold text-sm mb-1 text-white">Tata Kosh</h4>
+                    <p className="text-xs text-blue-200">GP Sheets</p>
                   </div>
 
                   {/* Tata Wama */}
-                  <div className="bg-gradient-to-br from-white/20 to-white/10 backdrop-blur-sm rounded-3xl p-5 text-center border-2 border-white/30 hover:border-purple-300/50 hover:scale-110 transition-all duration-500 shadow-xl hover:shadow-2xl animate-bounce" style={{animationDuration: '2s', animationDelay: '6.5s'}}>
-                    <div className="w-14 h-14 bg-gradient-to-br from-white to-gray-100 rounded-2xl p-2 mx-auto mb-3 shadow-lg hover:rotate-6 transition-transform duration-300">
+                  <div className="bg-white/10 backdrop-blur-sm rounded-2xl p-4 text-center border border-white/20 hover:bg-white/20 hover:scale-105 transition-all duration-300 animate-pulse" style={{animationDuration: '4s', animationDelay: '7.5s'}}>
+                    <div className="w-12 h-12 bg-white rounded-xl p-2 mx-auto mb-3 hover:rotate-3 transition-transform duration-300">
                       <Image
                         src="/images/products/tata-wama-logo.png"
                         alt="Tata Wama"
-                        width={56}
-                        height={56}
+                        width={48}
+                        height={48}
                         className="w-full h-full object-contain"
                       />
                     </div>
-                    <h4 className="font-black text-sm mb-1 text-purple-200">Tata Wama</h4>
-                    <p className="text-xs text-white font-medium">🧱 Walling</p>
+                    <h4 className="font-bold text-sm mb-1 text-white">Tata Wama</h4>
+                    <p className="text-xs text-blue-200">Walling</p>
                   </div>
 
                   {/* Palram */}
-                  <div className="bg-gradient-to-br from-white/20 to-white/10 backdrop-blur-sm rounded-3xl p-5 text-center border-2 border-white/30 hover:border-cyan-300/50 hover:scale-110 transition-all duration-500 shadow-xl hover:shadow-2xl animate-bounce" style={{animationDuration: '2s', animationDelay: '7s'}}>
-                    <div className="w-14 h-14 bg-gradient-to-br from-white to-gray-100 rounded-2xl p-2 mx-auto mb-3 shadow-lg hover:rotate-6 transition-transform duration-300">
+                  <div className="bg-white/10 backdrop-blur-sm rounded-2xl p-4 text-center border border-white/20 hover:bg-white/20 hover:scale-105 transition-all duration-300 animate-pulse" style={{animationDuration: '4s', animationDelay: '8s'}}>
+                    <div className="w-12 h-12 bg-white rounded-xl p-2 mx-auto mb-3 hover:rotate-3 transition-transform duration-300">
                       <Image
                         src="/images/products/palram-logo.png"
                         alt="Palram"
-                        width={56}
-                        height={56}
+                        width={48}
+                        height={48}
                         className="w-full h-full object-contain"
                       />
                     </div>
-                    <h4 className="font-black text-sm mb-1 text-cyan-200">Palram</h4>
-                    <p className="text-xs text-white font-medium">💎 Polycarbonate</p>
+                    <h4 className="font-bold text-sm mb-1 text-white">Palram</h4>
+                    <p className="text-xs text-blue-200">Polycarbonate</p>
                   </div>
 
                   {/* Tata Agrigo */}
-                  <div className="bg-gradient-to-br from-white/20 to-white/10 backdrop-blur-sm rounded-3xl p-5 text-center border-2 border-white/30 hover:border-green-300/50 hover:scale-110 transition-all duration-500 shadow-xl hover:shadow-2xl animate-bounce" style={{animationDuration: '2s', animationDelay: '7.5s'}}>
-                    <div className="w-14 h-14 bg-gradient-to-br from-white to-gray-100 rounded-2xl p-2 mx-auto mb-3 shadow-lg hover:rotate-6 transition-transform duration-300">
-                      <Sprout size={28} className="text-green-500 mx-auto" />
+                  <div className="bg-white/10 backdrop-blur-sm rounded-2xl p-4 text-center border border-white/20 hover:bg-white/20 hover:scale-105 transition-all duration-300 animate-pulse" style={{animationDuration: '4s', animationDelay: '8.5s'}}>
+                    <div className="w-12 h-12 bg-white rounded-xl p-2 mx-auto mb-3 hover:rotate-3 transition-transform duration-300">
+                      <Image
+                        src="/images/products/tata-agrigo-logo.png"
+                        alt="Tata Agrigo"
+                        width={48}
+                        height={48}
+                        className="w-full h-full object-contain"
+                      />
                     </div>
-                    <h4 className="font-black text-sm mb-1 text-green-200">Tata Agrigo</h4>
-                    <p className="text-xs text-white font-medium">🌾 Agricultural Tools</p>
+                    <h4 className="font-bold text-sm mb-1 text-white">Tata Agrigo</h4>
+                    <p className="text-xs text-blue-200">Agricultural Tools</p>
                   </div>
                 </div>
               </div>
             </div>
           </div>
 
-          {/* Enhanced Scroll Indicator */}
+          {/* Scroll Indicator */}
           <div className="absolute bottom-4 left-1/2 transform -translate-x-1/2 animate-bounce" style={{animationDuration: '2s'}}>
-            <div className="w-8 h-12 border-3 border-gradient-to-b from-yellow-300 to-green-300 rounded-full flex justify-center bg-white/10 backdrop-blur-sm shadow-lg animate-pulse" style={{animationDuration: '3s'}}>
-              <div className="w-2 h-4 bg-gradient-to-b from-yellow-400 to-green-400 rounded-full mt-2 animate-ping shadow-lg" style={{animationDuration: '2s', animationDelay: '1s'}}></div>
+            <div className="w-6 h-10 border-2 border-white/30 rounded-full flex justify-center animate-pulse" style={{animationDuration: '3s'}}>
+              <div className="w-1 h-3 bg-white/50 rounded-full mt-2 animate-ping" style={{animationDuration: '2s', animationDelay: '1s'}}></div>
             </div>
-            <p className="text-sm font-bold text-center mt-3 bg-gradient-to-r from-yellow-300 to-green-300 bg-clip-text text-transparent animate-pulse" style={{animationDuration: '4s', animationDelay: '2s'}}>
-              ⬇️ Scroll to Explore
-            </p>
+            <p className="text-xs text-white/70 mt-2 text-center animate-pulse" style={{animationDuration: '4s', animationDelay: '2s'}}>Scroll to Explore</p>
           </div>
         </div>
       </section>
@@ -218,9 +227,9 @@ export default function Home() {
               </p>
 
               {/* Products Grid */}
-              <div className="grid grid-cols-5 gap-4 mb-8">
+              <div className="grid grid-cols-3 md:grid-cols-5 gap-4 mb-8">
                 <div className="text-center">
-                  <div className="w-16 h-16 bg-accent-50 rounded-xl p-2 mb-2">
+                  <div className="w-16 h-16 bg-accent-50 rounded-xl p-2 mb-2 mx-auto">
                     <Image
                       src="/images/products/tata-shaktee-logo.png"
                       alt="Tata Shaktee"
@@ -229,10 +238,10 @@ export default function Home() {
                       className="w-full h-full object-contain"
                     />
                   </div>
-                  <p className="text-xs text-accent-600">Tata Shaktee</p>
+                  <p className="text-xs text-accent-600 font-medium">Tata Shaktee</p>
                 </div>
                 <div className="text-center">
-                  <div className="w-16 h-16 bg-accent-50 rounded-xl p-2 mb-2">
+                  <div className="w-16 h-16 bg-accent-50 rounded-xl p-2 mb-2 mx-auto">
                     <Image
                       src="/images/products/durashine-logo.png"
                       alt="Durashine"
@@ -241,10 +250,10 @@ export default function Home() {
                       className="w-full h-full object-contain"
                     />
                   </div>
-                  <p className="text-xs text-accent-600">Durashine</p>
+                  <p className="text-xs text-accent-600 font-medium">Durashine</p>
                 </div>
                 <div className="text-center">
-                  <div className="w-16 h-16 bg-accent-50 rounded-xl p-2 mb-2">
+                  <div className="w-16 h-16 bg-accent-50 rounded-xl p-2 mb-2 mx-auto">
                     <Image
                       src="/images/products/tata-kosh-logo.png"
                       alt="Tata Kosh"
@@ -253,10 +262,10 @@ export default function Home() {
                       className="w-full h-full object-contain"
                     />
                   </div>
-                  <p className="text-xs text-accent-600">Tata Kosh</p>
+                  <p className="text-xs text-accent-600 font-medium">Tata Kosh</p>
                 </div>
                 <div className="text-center">
-                  <div className="w-16 h-16 bg-accent-50 rounded-xl p-2 mb-2">
+                  <div className="w-16 h-16 bg-accent-50 rounded-xl p-2 mb-2 mx-auto">
                     <Image
                       src="/images/products/tata-wama-logo.png"
                       alt="Tata Wama"
@@ -265,10 +274,10 @@ export default function Home() {
                       className="w-full h-full object-contain"
                     />
                   </div>
-                  <p className="text-xs text-accent-600">Tata Wama</p>
+                  <p className="text-xs text-accent-600 font-medium">Tata Wama</p>
                 </div>
                 <div className="text-center">
-                  <div className="w-16 h-16 bg-accent-50 rounded-xl p-2 mb-2">
+                  <div className="w-16 h-16 bg-accent-50 rounded-xl p-2 mb-2 mx-auto">
                     <Image
                       src="/images/products/palram-logo.png"
                       alt="Palram"
@@ -277,7 +286,7 @@ export default function Home() {
                       className="w-full h-full object-contain"
                     />
                   </div>
-                  <p className="text-xs text-accent-600">Palram</p>
+                  <p className="text-xs text-accent-600 font-medium">Palram</p>
                 </div>
               </div>
 
@@ -309,30 +318,30 @@ export default function Home() {
               </p>
 
               {/* Tool Categories Grid */}
-              <div className="grid grid-cols-4 gap-4 mb-8">
+              <div className="grid grid-cols-2 md:grid-cols-4 gap-4 mb-8">
                 <div className="text-center">
-                  <div className="w-16 h-16 bg-secondary-50 rounded-xl flex items-center justify-center mb-2">
+                  <div className="w-16 h-16 bg-secondary-50 rounded-xl flex items-center justify-center mb-2 mx-auto">
                     <Wrench size={28} className="text-secondary-600" />
                   </div>
-                  <p className="text-xs text-accent-600">Hand Tools</p>
+                  <p className="text-xs text-accent-600 font-medium">Hand Tools</p>
                 </div>
                 <div className="text-center">
-                  <div className="w-16 h-16 bg-secondary-50 rounded-xl flex items-center justify-center mb-2">
+                  <div className="w-16 h-16 bg-secondary-50 rounded-xl flex items-center justify-center mb-2 mx-auto">
                     <Hammer size={28} className="text-secondary-600" />
                   </div>
-                  <p className="text-xs text-accent-600">Hammers</p>
+                  <p className="text-xs text-accent-600 font-medium">Hammers</p>
                 </div>
                 <div className="text-center">
-                  <div className="w-16 h-16 bg-secondary-50 rounded-xl flex items-center justify-center mb-2">
+                  <div className="w-16 h-16 bg-secondary-50 rounded-xl flex items-center justify-center mb-2 mx-auto">
                     <Zap size={28} className="text-secondary-600" />
                   </div>
-                  <p className="text-xs text-accent-600">Welding</p>
+                  <p className="text-xs text-accent-600 font-medium">Welding</p>
                 </div>
                 <div className="text-center">
-                  <div className="w-16 h-16 bg-secondary-50 rounded-xl flex items-center justify-center mb-2 text-secondary-600 font-bold text-sm">
+                  <div className="w-16 h-16 bg-secondary-50 rounded-xl flex items-center justify-center mb-2 mx-auto text-secondary-600 font-bold text-sm">
                     +29
                   </div>
-                  <p className="text-xs text-accent-600">More</p>
+                  <p className="text-xs text-accent-600 font-medium">More</p>
                 </div>
               </div>
 
