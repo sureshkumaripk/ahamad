@@ -188,7 +188,7 @@ export default function AhamadCo() {
                 <div className="flex-1">
                   <h3 className="text-2xl font-bold text-accent-800 mb-3">Tata Shaktee</h3>
                   <p className="text-accent-700 mb-4 leading-relaxed">
-                    Tata Steel's flagship brand in galvanized corrugated sheets. Made of virgin steel with uniform zinc coating for superior weather resistance and longevity.
+                    Tata Steel&apos;s flagship brand in galvanized corrugated sheets. Made of virgin steel with uniform zinc coating for superior weather resistance and longevity.
                   </p>
                   <ul className="space-y-2 mb-4">
                     {['Virgin steel construction', 'Uniform zinc coating', 'Weather resistant', 'Superior durability'].map((feature, index) => (
@@ -233,7 +233,7 @@ export default function AhamadCo() {
                   </ul>
                   <div className="bg-accent-100 rounded-lg p-4">
                     <h4 className="font-semibold text-accent-800 mb-1">Recognition:</h4>
-                    <p className="text-sm text-accent-600">Asia's Most Trusted Brand by International Brand Consulting Corporation, USA.</p>
+                    <p className="text-sm text-accent-600">Asia&apos;s Most Trusted Brand by International Brand Consulting Corporation, USA.</p>
                   </div>
                 </div>
               </div>
@@ -287,7 +287,7 @@ export default function AhamadCo() {
                 <div className="flex-1">
                   <h3 className="text-2xl font-bold text-accent-800 mb-3">Tata Wama</h3>
                   <p className="text-accent-700 mb-4 leading-relaxed">
-                    "Walling Masters" - Tata Steel's latest offering for walling and fencing needs. Developed exclusively for vertical applications in retail and institutional segments.
+                    &quot;Walling Masters&quot; - Tata Steel&apos;s latest offering for walling and fencing needs. Developed exclusively for vertical applications in retail and institutional segments.
                   </p>
                   <ul className="space-y-2 mb-4">
                     {['Vertical applications', 'Walling & fencing solutions', 'Construction site use', 'Temporary structures'].map((feature, index) => (
