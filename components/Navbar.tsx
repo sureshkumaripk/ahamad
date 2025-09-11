@@ -2,7 +2,9 @@
 
 import { useState, useEffect } from 'react'
 import Link from 'next/link'
-import { Menu, X } from 'lucide-react'
+import Image from 'next/image'
+import { usePathname } from 'next/navigation'
+import { Menu, X, Building, Sprout, Home, Phone } from 'lucide-react'
 
 interface NavbarProps {
   companyName?: string
@@ -19,9 +21,16 @@ export default function Navbar({
 }: NavbarProps) {
   const [isOpen, setIsOpen] = useState(false)
   const [isScrolled, setIsScrolled] = useState(false)
+  const pathname = usePathname()
 
   const toggleMenu = () => {
     setIsOpen(!isOpen)
+  }
+
+  const isActive = (path: string) => {
+    if (path === '/' && pathname === '/') return true
+    if (path !== '/' && pathname.startsWith(path)) return true
+    return false
   }
 
   useEffect(() => {
@@ -41,57 +50,96 @@ export default function Navbar({
         : 'bg-transparent backdrop-blur-none shadow-none'
     }`}>
       <div className="container-custom">
-        <div className="flex justify-between items-center h-16">
+        <div className="flex justify-between items-center h-24">
           {/* Logo */}
-          <Link href="/" className={`text-2xl font-bold transition-colors duration-500 ${
-            isScrolled 
-              ? `${logoColor} ${hoverColor}` 
-              : 'text-white hover:text-white/80'
-          }`}>
-            {companyLogo}
+          <Link href="/" className="flex items-center space-x-4 transition-all duration-500 hover:scale-105">
+            <div className={`w-24 h-24 rounded-xl p-3 transition-all duration-500 ${
+              isScrolled 
+                ? 'bg-white shadow-xl border-2 border-accent-200' 
+                : 'bg-white/25 backdrop-blur-sm border-2 border-white/40'
+            }`}>
+              <Image
+                src="/images/ahamad-groups-logo.png"
+                alt="Ahamad Groups Logo"
+                width={96}
+                height={96}
+                className="w-full h-full object-contain"
+              />
+            </div>
+            <span className={`text-3xl font-bold transition-colors duration-500 hidden sm:block ${
+              isScrolled 
+                ? `${logoColor} ${hoverColor}` 
+                : 'text-white hover:text-white/80'
+            }`}>
+              {companyLogo}
+            </span>
           </Link>
 
           {/* Desktop Navigation */}
-          <div className="hidden md:flex space-x-8">
-            <Link href="/" className={`font-medium transition-colors duration-500 relative group ${
-              isScrolled 
-                ? 'text-accent-700 hover:text-primary-600' 
-                : 'text-white hover:text-white/80'
+          <div className="hidden md:flex items-center space-x-1">
+            <Link href="/" className={`font-medium transition-colors duration-500 relative group px-4 py-2 rounded-lg ${
+              isActive('/') 
+                ? (isScrolled ? 'text-primary-600 bg-primary-50' : 'text-white bg-white/20')
+                : (isScrolled 
+                    ? 'text-accent-700 hover:text-primary-600 hover:bg-primary-50' 
+                    : 'text-white hover:text-white/80 hover:bg-white/10')
             }`}>
-              Home
-              <span className={`absolute -bottom-1 left-0 w-0 h-0.5 transition-all duration-300 group-hover:w-full ${
-                isScrolled ? 'bg-primary-600' : 'bg-white'
-              }`}></span>
+              <div className="flex items-center space-x-2">
+                <Home size={18} />
+                <span>Home</span>
+              </div>
+              {isActive('/') && (
+                <span className={`absolute -bottom-1 left-1/2 transform -translate-x-1/2 w-6 h-0.5 rounded-full ${
+                  isScrolled ? 'bg-primary-600' : 'bg-white'
+                }`}></span>
+              )}
             </Link>
-            <Link href="/#companies" className={`font-medium transition-colors duration-500 relative group ${
-              isScrolled 
-                ? 'text-accent-700 hover:text-primary-600' 
-                : 'text-white hover:text-white/80'
+            
+            <Link href="/ahamad-co" className={`font-medium transition-colors duration-500 relative group px-4 py-2 rounded-lg ${
+              isActive('/ahamad-co') 
+                ? (isScrolled ? 'text-primary-600 bg-primary-50' : 'text-white bg-white/20')
+                : (isScrolled 
+                    ? 'text-accent-700 hover:text-primary-600 hover:bg-primary-50' 
+                    : 'text-white hover:text-white/80 hover:bg-white/10')
             }`}>
-              Companies
-              <span className={`absolute -bottom-1 left-0 w-0 h-0.5 transition-all duration-300 group-hover:w-full ${
-                isScrolled ? 'bg-primary-600' : 'bg-white'
-              }`}></span>
+              <div className="flex items-center space-x-2">
+                <Building size={18} />
+                <span>Ahamad & Co</span>
+              </div>
+              {isActive('/ahamad-co') && (
+                <span className={`absolute -bottom-1 left-1/2 transform -translate-x-1/2 w-6 h-0.5 rounded-full ${
+                  isScrolled ? 'bg-primary-600' : 'bg-white'
+                }`}></span>
+              )}
             </Link>
-            <Link href="/#about" className={`font-medium transition-colors duration-500 relative group ${
-              isScrolled 
-                ? 'text-accent-700 hover:text-primary-600' 
-                : 'text-white hover:text-white/80'
+            
+            <Link href="/ahamad-agencies" className={`font-medium transition-colors duration-500 relative group px-4 py-2 rounded-lg ${
+              isActive('/ahamad-agencies') 
+                ? (isScrolled ? 'text-secondary-600 bg-secondary-50' : 'text-white bg-white/20')
+                : (isScrolled 
+                    ? 'text-accent-700 hover:text-secondary-600 hover:bg-secondary-50' 
+                    : 'text-white hover:text-white/80 hover:bg-white/10')
             }`}>
-              About
-              <span className={`absolute -bottom-1 left-0 w-0 h-0.5 transition-all duration-300 group-hover:w-full ${
-                isScrolled ? 'bg-primary-600' : 'bg-white'
-              }`}></span>
+              <div className="flex items-center space-x-2">
+                <Sprout size={18} />
+                <span>AHAMAD Agencies</span>
+              </div>
+              {isActive('/ahamad-agencies') && (
+                <span className={`absolute -bottom-1 left-1/2 transform -translate-x-1/2 w-6 h-0.5 rounded-full ${
+                  isScrolled ? 'bg-secondary-600' : 'bg-white'
+                }`}></span>
+              )}
             </Link>
-            <Link href="/#contact" className={`font-medium transition-colors duration-500 relative group ${
+            
+            <Link href="/#contact" className={`font-medium transition-colors duration-500 relative group px-4 py-2 rounded-lg ${
               isScrolled 
-                ? 'text-accent-700 hover:text-primary-600' 
-                : 'text-white hover:text-white/80'
+                ? 'text-accent-700 hover:text-green-600 hover:bg-green-50' 
+                : 'text-white hover:text-white/80 hover:bg-white/10'
             }`}>
-              Contact
-              <span className={`absolute -bottom-1 left-0 w-0 h-0.5 transition-all duration-300 group-hover:w-full ${
-                isScrolled ? 'bg-primary-600' : 'bg-white'
-              }`}></span>
+              <div className="flex items-center space-x-2">
+                <Phone size={18} />
+                <span>Contact</span>
+              </div>
             </Link>
           </div>
 
@@ -108,41 +156,66 @@ export default function Navbar({
           </button>
         </div>
 
-        {/* Mobile Navigation */}
+        {/* Enhanced Mobile Navigation */}
         {isOpen && (
           <div className={`md:hidden border-t shadow-lg transition-all duration-500 ${
             isScrolled 
               ? 'bg-white border-accent-200' 
               : 'bg-white/95 backdrop-blur-sm border-white/20'
           }`}>
-            <div className="px-4 py-6 space-y-4">
+            <div className="px-4 py-6 space-y-2">
               <Link 
                 href="/" 
-                className="block text-accent-700 hover:text-primary-600 font-medium transition-colors"
+                className={`flex items-center space-x-3 px-4 py-3 rounded-lg font-medium transition-all duration-300 ${
+                  isActive('/') 
+                    ? 'text-primary-600 bg-primary-50 border-l-4 border-primary-600' 
+                    : 'text-accent-700 hover:text-primary-600 hover:bg-primary-50'
+                }`}
                 onClick={() => setIsOpen(false)}
               >
-                Home
+                <Home size={20} />
+                <span>Home</span>
               </Link>
+              
               <Link 
-                href="/#companies" 
-                className="block text-accent-700 hover:text-primary-600 font-medium transition-colors"
+                href="/ahamad-co" 
+                className={`flex items-center space-x-3 px-4 py-3 rounded-lg font-medium transition-all duration-300 ${
+                  isActive('/ahamad-co') 
+                    ? 'text-primary-600 bg-primary-50 border-l-4 border-primary-600' 
+                    : 'text-accent-700 hover:text-primary-600 hover:bg-primary-50'
+                }`}
                 onClick={() => setIsOpen(false)}
               >
-                Companies
+                <Building size={20} />
+                <div>
+                  <div>Ahamad & Co</div>
+                  <div className="text-xs text-accent-500">Construction Materials</div>
+                </div>
               </Link>
+              
               <Link 
-                href="/#about" 
-                className="block text-accent-700 hover:text-primary-600 font-medium transition-colors"
+                href="/ahamad-agencies" 
+                className={`flex items-center space-x-3 px-4 py-3 rounded-lg font-medium transition-all duration-300 ${
+                  isActive('/ahamad-agencies') 
+                    ? 'text-secondary-600 bg-secondary-50 border-l-4 border-secondary-600' 
+                    : 'text-accent-700 hover:text-secondary-600 hover:bg-secondary-50'
+                }`}
                 onClick={() => setIsOpen(false)}
               >
-                About
+                <Sprout size={20} />
+                <div>
+                  <div>AHAMAD Agencies</div>
+                  <div className="text-xs text-accent-500">Agricultural Tools</div>
+                </div>
               </Link>
+              
               <Link 
                 href="/#contact" 
-                className="block text-accent-700 hover:text-primary-600 font-medium transition-colors"
+                className="flex items-center space-x-3 px-4 py-3 rounded-lg font-medium transition-all duration-300 text-accent-700 hover:text-green-600 hover:bg-green-50"
                 onClick={() => setIsOpen(false)}
               >
-                Contact
+                <Phone size={20} />
+                <span>Contact</span>
               </Link>
             </div>
           </div>
