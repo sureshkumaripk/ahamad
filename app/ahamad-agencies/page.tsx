@@ -3,7 +3,7 @@
 import { useState } from 'react'
 import Navbar from '@/components/Navbar'
 import Footer from '@/components/Footer'
-import { Sprout, Tractor, Beaker, Shield, Wrench, Wheat, Leaf, Carrot, Flower2, GraduationCap, Microscope, TrendingUp, Truck, Award, Users, Users2, Globe, ArrowRight, Check, X, Hammer, FileText, Scissors, Settings, Zap, Grip, Droplets, HardHat, Cog, LucideIcon } from 'lucide-react'
+import { Sprout, Tractor, Beaker, Shield, Wrench, Wheat, Leaf, Carrot, Flower2, GraduationCap, Microscope, TrendingUp, Truck, Award, Users, Users2, Globe, ArrowRight, Check, X, Hammer, FileText, Scissors, Settings, Zap, Grip, Droplets, HardHat, Cog, LucideIcon, MessageCircle, Phone, Mail, MapPin } from 'lucide-react'
 
 interface Product {
   name: string
@@ -1175,112 +1175,68 @@ export default function AhamadAgencies() {
       </section>
 
       {/* Contact Section */}
-      <section id="contact-section" className="section-padding bg-accent-50">
+      <section id="contact" className="section-padding bg-accent-50">
         <div className="container-custom">
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
-            <div className="space-y-8">
-              <div>
-                <h2 className="text-3xl font-bold text-accent-800 mb-6">Get in Touch</h2>
-                <p className="text-lg text-accent-700 leading-relaxed">
-                  Ready to improve your agricultural productivity? Contact us for expert advice and product information.
+          <div className="max-w-4xl mx-auto text-center">
+            <div className="mb-12">
+              <h2 className="text-3xl md:text-4xl font-bold text-accent-800 mb-6">Get in Touch</h2>
+              <p className="text-xl text-accent-700 leading-relaxed">
+                Ready to improve your agricultural productivity? Contact us for expert advice and premium tools.
+              </p>
+            </div>
+
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-4xl mx-auto mb-12">
+              <div className="flex flex-col items-center text-center bg-white rounded-3xl p-8 hover:shadow-lg transition-all duration-300 border border-accent-200">
+                <div className="w-20 h-20 bg-green-100 rounded-full flex items-center justify-center mb-6">
+                  <MessageCircle size={32} className="text-green-600" />
+                </div>
+                <h4 className="font-bold text-accent-800 text-xl mb-3">WhatsApp</h4>
+                <p className="text-accent-600 mb-4">
+                  <a 
+                    href="https://wa.me/919842448051" 
+                    className="hover:text-green-600 transition-colors duration-300 text-lg font-medium"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    +91 9842448051
+                  </a>
+                </p>
+                <p className="text-accent-500 text-sm">
+                  Get instant tool recommendations and pricing
                 </p>
               </div>
 
-              <div className="space-y-6">
-                <div className="flex items-start space-x-4">
-                  <div className="w-12 h-12 bg-secondary-100 rounded-xl flex items-center justify-center flex-shrink-0">
-                    <Sprout size={20} className="text-secondary-600" />
-                  </div>
-                  <div>
-                    <h4 className="font-semibold text-accent-800 mb-1">Phone</h4>
-                    <p className="text-accent-600">+91 XXX XXX XXXX</p>
-                  </div>
+              <div className="flex flex-col items-center text-center bg-white rounded-3xl p-8 hover:shadow-lg transition-all duration-300 border border-accent-200">
+                <div className="w-20 h-20 bg-blue-100 rounded-full flex items-center justify-center mb-6">
+                  <Mail size={32} className="text-blue-600" />
                 </div>
-
-                <div className="flex items-start space-x-4">
-                  <div className="w-12 h-12 bg-primary-100 rounded-xl flex items-center justify-center flex-shrink-0">
-                    <Award size={20} className="text-primary-600" />
-                  </div>
-                  <div>
-                    <h4 className="font-semibold text-accent-800 mb-1">Email</h4>
-                    <p className="text-accent-600">info@ahamadagencies.com</p>
-                  </div>
-                </div>
+                <h4 className="font-bold text-accent-800 text-xl mb-3">Email</h4>
+                <p className="text-accent-600 mb-4">
+                  <a 
+                    href="mailto:ahamadandco@yahoo.co.in" 
+                    className="hover:text-blue-600 transition-colors duration-300 text-lg font-medium"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    ahamadandco@yahoo.co.in
+                  </a>
+                </p>
+                <p className="text-accent-500 text-sm">
+                  Send us your detailed requirements
+                </p>
               </div>
             </div>
 
-            <div className="card p-8">
-              <h3 className="text-2xl font-bold text-accent-800 mb-6">Request Information</h3>
-              <form className="space-y-6">
-                <div>
-                  <input
-                    type="text"
-                    placeholder="Your Name"
-                    className="w-full px-4 py-3 border border-accent-300 rounded-xl focus:ring-2 focus:ring-secondary-500 focus:border-transparent transition-all duration-300"
-                    required
-                  />
-                </div>
-                <div>
-                  <input
-                    type="email"
-                    placeholder="Your Email"
-                    className="w-full px-4 py-3 border border-accent-300 rounded-xl focus:ring-2 focus:ring-secondary-500 focus:border-transparent transition-all duration-300"
-                    required
-                  />
-                </div>
-                <div>
-                  <select className="w-full px-4 py-3 border border-accent-300 rounded-xl focus:ring-2 focus:ring-secondary-500 focus:border-transparent transition-all duration-300">
-                    <option value="">Select Product Category</option>
-                    <option value="hand-tools">Tata Steel Agrico Hand Tools</option>
-                    <option value="consumables">Agricultural Consumables</option>
-                    <option value="shovels">Shovels</option>
-                    <option value="sickles">Sickles</option>
-                    <option value="crowbars">Crowbars & Tools</option>
-                    <option value="hammers">Hammers & Axes</option>
-                    <option value="pick-axes">Pick Axes</option>
-                    <option value="engineering-files">Engineering Files</option>
-                    <option value="garden-tools">Garden Tools</option>
-                    <option value="spanners-wrenches">Spanners & Wrenches</option>
-                    <option value="screwdrivers">Screwdrivers & Electrical Tools</option>
-                    <option value="pliers">Pliers & Specialized Tools</option>
-                    <option value="professional-hammers">Professional Hammers</option>
-                    <option value="socket-sets">Socket Sets & Accessories</option>
-                    <option value="grease-guns">Grease Guns & Buckets</option>
-                    <option value="drywall-screws">Dry Wall Screws</option>
-                    <option value="carpentry-nails">Carpentry Nails</option>
-                    <option value="concrete-nails">Concrete Nails</option>
-                    <option value="welding-electrodes-mild">Welding Electrodes - Mild Steel</option>
-                    <option value="welding-electrodes-hydrogen">Welding Electrodes - Low Hydrogen</option>
-                    <option value="welding-electrodes-stainless">Welding Electrodes - Stainless Steel</option>
-                    <option value="self-drilling-screws">Self Drilling Screws</option>
-                    <option value="abrasive-cutting">Abrasive Wheels - Cutting</option>
-                    <option value="abrasive-grinding">Abrasive Wheels - Grinding</option>
-                    <option value="flap-discs">Flap Discs - Grinding & Polishing</option>
-                    <option value="diamond-saw-blades">Diamond Saw Blades</option>
-                    <option value="tct-blades">TCT Blades - Wood Ply Cut</option>
-                    <option value="seeds">Tata Agrigo Seeds</option>
-                    <option value="fertilizers">Tata Agrigo Fertilizers</option>
-                    <option value="crop-protection">Crop Protection</option>
-                    <option value="equipment">Agricultural Equipment</option>
-                    <option value="all">All Products</option>
-                  </select>
-                </div>
-                <div>
-                  <textarea
-                    placeholder="Tell us about your farming needs and crop types"
-                    rows={4}
-                    className="w-full px-4 py-3 border border-accent-300 rounded-xl focus:ring-2 focus:ring-secondary-500 focus:border-transparent transition-all duration-300 resize-none"
-                    required
-                  />
-                </div>
-                <button
-                  type="submit"
-                  className="w-full bg-gradient-to-r from-secondary-600 to-secondary-700 hover:from-secondary-700 hover:to-secondary-800 text-white font-semibold py-3 px-6 rounded-full transition-all duration-300 transform hover:scale-105 hover:shadow-lg flex items-center justify-center"
-                >
-                  Request Information
-                  <ArrowRight size={18} className="ml-2" />
-                </button>
-              </form>
+            {/* Address Section */}
+            <div className="text-center bg-white rounded-2xl p-8 max-w-2xl mx-auto border border-accent-200">
+              <div className="flex items-center justify-center mb-4">
+                <MapPin size={24} className="text-green-600 mr-3" />
+                <h4 className="font-bold text-accent-800 text-lg">Visit Our Store</h4>
+              </div>
+              <p className="text-accent-600 leading-relaxed">
+                62, Madurai Rd, Palakarai, Sangillyandapuram,<br />
+                Tiruchirappalli, Tamil Nadu 620001
+              </p>
             </div>
           </div>
         </div>
@@ -1342,6 +1298,18 @@ export default function AhamadAgencies() {
       )}
 
       <Footer />
+
+      {/* Fixed WhatsApp Button */}
+      <div className="fixed bottom-6 right-6 z-50">
+        <a
+          href="https://wa.me/919842448051?text=Hi%20AHAMAD%20Agencies,%20I'm%20interested%20in%20your%20agricultural%20tools%20and%20equipment.%20Can%20you%20help%20me%20with%20product%20information%20and%20pricing?"
+          className="flex items-center justify-center w-16 h-16 bg-green-500 hover:bg-green-600 text-white rounded-full shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-110"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <MessageCircle size={28} />
+        </a>
+      </div>
     </main>
   )
 }

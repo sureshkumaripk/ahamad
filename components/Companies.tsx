@@ -28,14 +28,14 @@ export default function Companies() {
             </div>
 
             <p className="text-accent-700 mb-6 leading-relaxed">
-              Specializing in construction materials, we are the trusted distributor of Tata roofing sheets and coils, 
-              providing quality solutions for residential and commercial construction projects.
+              Specializing in premium construction materials, we are the authorized distributor of Tata Steel products and 
+              Palram polycarbonate solutions, providing comprehensive roofing, walling, and construction solutions.
             </p>
 
             <div className="mb-6">
               <h4 className="font-semibold text-accent-800 mb-3">Products:</h4>
               <ul className="space-y-2">
-                {['Tata Roofing Sheets', 'Tata Coils', 'Construction Solutions'].map((product, index) => (
+                {['Tata Shaktee (GC Sheets)', 'Durashine (Color Coated)', 'Tata Kosh (GP Sheets)', 'Tata Wama (Walling)', 'Palram Polycarbonate'].map((product, index) => (
                   <li key={index} className="flex items-center space-x-2">
                     <Check size={16} className="text-secondary-500 flex-shrink-0" />
                     <span className="text-accent-700">{product}</span>

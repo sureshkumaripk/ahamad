@@ -1,6 +1,7 @@
 import Navbar from '@/components/Navbar'
 import Footer from '@/components/Footer'
-import { Building, Home, Cog, Check, ArrowRight, Award, Truck, Users, Users2 } from 'lucide-react'
+import Image from 'next/image'
+import { Building, Home, Cog, Check, ArrowRight, Award, Truck, Users, Users2, Phone, Mail, MessageCircle, MapPin } from 'lucide-react'
 
 export default function AhamadCo() {
   return (
@@ -13,62 +14,154 @@ export default function AhamadCo() {
       />
       
       {/* Hero Section */}
-      <section className="gradient-bg text-white min-h-screen flex items-center">
-        <div className="container-custom">
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
-            <div className="space-y-8">
-              <div className="inline-flex items-center space-x-2 bg-white/20 backdrop-blur-sm rounded-full px-4 py-2 border border-white/30">
-                <Building size={20} />
-                <span className="text-sm font-medium">Construction Solutions</span>
-              </div>
+      <section className="relative gradient-bg text-white min-h-screen flex items-center overflow-hidden pt-28">
+        {/* Animated Background Pattern */}
+        <div className="absolute inset-0 opacity-10">
+          <div className="absolute top-20 left-10 w-32 h-32 border border-white/20 rounded-2xl rotate-12 animate-pulse" style={{animationDuration: '4s'}}></div>
+          <div className="absolute top-40 right-20 w-24 h-24 border border-white/20 rounded-xl -rotate-6 animate-bounce" style={{animationDuration: '6s', animationDelay: '1s'}}></div>
+          <div className="absolute bottom-32 left-32 w-28 h-28 border border-white/20 rounded-2xl rotate-45 animate-ping" style={{animationDuration: '8s', animationDelay: '2s'}}></div>
+          <div className="absolute bottom-20 right-16 w-20 h-20 border border-white/20 rounded-xl -rotate-12 animate-pulse" style={{animationDuration: '5s', animationDelay: '0.5s'}}></div>
+          
+          {/* Additional Floating Elements */}
+          <div className="absolute top-1/3 left-1/4 w-16 h-16 bg-white/5 rounded-full animate-bounce" style={{animationDuration: '7s', animationDelay: '3s'}}></div>
+          <div className="absolute bottom-1/3 right-1/4 w-12 h-12 bg-white/8 rounded-full animate-ping" style={{animationDuration: '6s', animationDelay: '1.5s'}}></div>
+          <div className="absolute top-2/3 left-1/6 w-8 h-8 bg-white/10 rounded-full animate-pulse" style={{animationDuration: '9s', animationDelay: '4s'}}></div>
+          
+          {/* Geometric Lines */}
+          <div className="absolute top-1/4 left-0 w-32 h-0.5 bg-gradient-to-r from-transparent via-white/20 to-transparent animate-pulse" style={{animationDuration: '10s'}}></div>
+          <div className="absolute bottom-1/4 right-0 w-28 h-0.5 bg-gradient-to-l from-transparent via-white/15 to-transparent animate-pulse" style={{animationDuration: '12s', animationDelay: '2s'}}></div>
+        </div>
 
-              <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold leading-tight">
-                Ahamad & Co
-                <span className="block text-secondary-300">Tata Roofing Excellence</span>
-              </h1>
-
-              <p className="text-xl text-blue-100 leading-relaxed">
-                Specializing in premium construction materials, Ahamad & Co has been the leading 
-                distributor of Tata roofing sheets and coils. We provide comprehensive solutions 
-                for residential, commercial, and industrial construction projects.
-              </p>
-
-              <div className="grid grid-cols-3 gap-6">
-                <div className="text-center bg-white/10 backdrop-blur-sm rounded-xl p-4 border border-white/20">
-                  <div className="text-2xl font-bold">15+</div>
-                  <div className="text-sm text-blue-100">Years Experience</div>
-                </div>
-                <div className="text-center bg-white/10 backdrop-blur-sm rounded-xl p-4 border border-white/20">
-                  <div className="text-2xl font-bold">500+</div>
-                  <div className="text-sm text-blue-100">Projects Completed</div>
-                </div>
-                <div className="text-center bg-white/10 backdrop-blur-sm rounded-xl p-4 border border-white/20">
-                  <div className="text-2xl font-bold">100%</div>
-                  <div className="text-sm text-blue-100">Quality Assurance</div>
-                </div>
-              </div>
+        <div className="container-custom relative z-10">
+          {/* Main Content */}
+          <div className="text-center max-w-4xl mx-auto space-y-8 mb-16">
+            <div className="inline-flex items-center space-x-2 bg-white/20 backdrop-blur-sm rounded-full px-6 py-3 border border-white/30 animate-pulse" style={{animationDuration: '3s'}}>
+              <Building size={20} className="animate-bounce" style={{animationDuration: '2s', animationDelay: '0.5s'}} />
+              <span className="text-sm font-medium tracking-wide">AUTHORIZED DISTRIBUTOR</span>
             </div>
 
-            <div className="flex justify-center">
-              <div className="grid grid-cols-2 gap-4">
-                <div className="bg-white/10 backdrop-blur-sm rounded-2xl p-6 text-center border border-white/20">
-                  <Home size={40} className="mx-auto mb-3" />
-                  <h4 className="font-semibold">Roofing Sheets</h4>
-                  <p className="text-sm text-blue-100">Premium Tata solutions</p>
+            <h1 className="text-5xl md:text-6xl lg:text-7xl font-bold leading-tight animate-pulse" style={{animationDuration: '4s', animationDelay: '1s'}}>
+              <span className="block text-secondary-300 font-normal">
+                Premium Construction Materials
+              </span>
+            </h1>
+
+            <p className="text-xl md:text-2xl text-blue-100 leading-relaxed max-w-3xl mx-auto animate-pulse" style={{animationDuration: '5s', animationDelay: '2s'}}>
+              Your trusted partner for authentic <strong>Tata Steel</strong> and <strong>Palram</strong> products. 
+              Delivering quality solutions for roofing, walling, and specialized construction applications.
+            </p>
+
+            {/* CTA Buttons */}
+            <div className="flex flex-col sm:flex-row gap-4 justify-center items-center pt-4">
+              <a href="#products" className="bg-white text-primary-600 px-8 py-4 rounded-2xl font-semibold hover:bg-blue-50 transition-all duration-300 shadow-lg hover:shadow-xl hover:scale-105 hover:-translate-y-1 animate-pulse" style={{animationDuration: '6s', animationDelay: '3s'}}>
+                View Our Products
+              </a>
+              <a href="#contact" className="bg-white/20 backdrop-blur-sm border border-white/30 px-8 py-4 rounded-2xl font-semibold hover:bg-white/30 hover:border-white/50 transition-all duration-300 hover:scale-105 hover:-translate-y-1 animate-pulse" style={{animationDuration: '7s', animationDelay: '3.5s'}}>
+                Get Quote
+              </a>
+            </div>
+          </div>
+
+          {/* Products Showcase */}
+          <div className="max-w-6xl mx-auto">
+            <div className="text-center mb-8 animate-pulse" style={{animationDuration: '3s', animationDelay: '4s'}}>
+              <h2 className="text-2xl md:text-3xl font-bold mb-4">Our Premium Brands</h2>
+              <div className="w-24 h-1 bg-secondary-300 mx-auto rounded-full animate-pulse" style={{animationDuration: '2s', animationDelay: '4.5s'}}></div>
+            </div>
+
+            <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-6">
+              {/* Tata Shaktee */}
+              <div className="group bg-white/10 backdrop-blur-sm rounded-3xl p-6 text-center border border-white/20 hover:bg-white/20 hover:scale-105 transition-all duration-300 hover:shadow-2xl animate-pulse" style={{animationDuration: '4s', animationDelay: '5s'}}>
+                <div className="w-16 h-16 bg-white rounded-2xl p-3 mx-auto mb-4 group-hover:scale-110 group-hover:rotate-3 transition-all duration-500">
+                  <Image
+                    src="/images/products/tata-shaktee-logo.png"
+                    alt="Tata Shaktee"
+                    width={64}
+                    height={64}
+                    className="w-full h-full object-contain group-hover:animate-pulse"
+                  />
                 </div>
-                <div className="bg-white/10 backdrop-blur-sm rounded-2xl p-6 text-center border border-white/20">
-                  <Cog size={40} className="mx-auto mb-3" />
-                  <h4 className="font-semibold">Coils</h4>
-                  <p className="text-sm text-blue-100">High-quality steel coils</p>
+                <h4 className="font-bold text-lg mb-1">Tata Shaktee</h4>
+                <p className="text-sm text-blue-200">Galvanized Corrugated Sheets</p>
+              </div>
+
+              {/* Durashine */}
+              <div className="group bg-white/10 backdrop-blur-sm rounded-3xl p-6 text-center border border-white/20 hover:bg-white/20 hover:scale-105 transition-all duration-300 hover:shadow-2xl animate-pulse" style={{animationDuration: '4.5s', animationDelay: '5.5s'}}>
+                <div className="w-16 h-16 bg-white rounded-2xl p-3 mx-auto mb-4 group-hover:scale-110 group-hover:rotate-3 transition-all duration-500">
+                  <Image
+                    src="/images/products/durashine-logo.png"
+                    alt="Durashine"
+                    width={64}
+                    height={64}
+                    className="w-full h-full object-contain group-hover:animate-pulse"
+                  />
                 </div>
+                <h4 className="font-bold text-lg mb-1">Durashine</h4>
+                <p className="text-sm text-blue-200">Color Coated Sheets</p>
+              </div>
+
+              {/* Tata Kosh */}
+              <div className="group bg-white/10 backdrop-blur-sm rounded-3xl p-6 text-center border border-white/20 hover:bg-white/20 hover:scale-105 transition-all duration-300 hover:shadow-2xl animate-pulse" style={{animationDuration: '5s', animationDelay: '6s'}}>
+                <div className="w-16 h-16 bg-white rounded-2xl p-3 mx-auto mb-4 group-hover:scale-110 group-hover:rotate-3 transition-all duration-500">
+                  <Image
+                    src="/images/products/tata-kosh-logo.png"
+                    alt="Tata Kosh"
+                    width={64}
+                    height={64}
+                    className="w-full h-full object-contain group-hover:animate-pulse"
+                  />
+                </div>
+                <h4 className="font-bold text-lg mb-1">Tata Kosh</h4>
+                <p className="text-sm text-blue-200">GP Sheets with Spangles</p>
+              </div>
+
+              {/* Tata Wama */}
+              <div className="group bg-white/10 backdrop-blur-sm rounded-3xl p-6 text-center border border-white/20 hover:bg-white/20 hover:scale-105 transition-all duration-300 hover:shadow-2xl animate-pulse" style={{animationDuration: '5.5s', animationDelay: '6.5s'}}>
+                <div className="w-16 h-16 bg-white rounded-2xl p-3 mx-auto mb-4 group-hover:scale-110 group-hover:rotate-3 transition-all duration-500">
+                  <Image
+                    src="/images/products/tata-wama-logo.png"
+                    alt="Tata Wama"
+                    width={64}
+                    height={64}
+                    className="w-full h-full object-contain group-hover:animate-pulse"
+                  />
+                </div>
+                <h4 className="font-bold text-lg mb-1">Tata Wama</h4>
+                <p className="text-sm text-blue-200">Walling & Fencing</p>
+              </div>
+
+              {/* Palram */}
+              <div className="group bg-white/10 backdrop-blur-sm rounded-3xl p-6 text-center border border-white/20 hover:bg-white/20 hover:scale-105 transition-all duration-300 hover:shadow-2xl animate-pulse" style={{animationDuration: '6s', animationDelay: '7s'}}>
+                <div className="w-16 h-16 bg-white rounded-2xl p-3 mx-auto mb-4 group-hover:scale-110 group-hover:rotate-3 transition-all duration-500">
+                  <Image
+                    src="/images/products/palram-logo.png"
+                    alt="Palram"
+                    width={64}
+                    height={64}
+                    className="w-full h-full object-contain group-hover:animate-pulse"
+                  />
+                </div>
+                <h4 className="font-bold text-lg mb-1">Palram</h4>
+                <p className="text-sm text-blue-200">Polycarbonate Solutions</p>
               </div>
             </div>
+          </div>
+
+        </div>
+
+        {/* Enhanced Scroll Indicator */}
+        <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2 animate-bounce" style={{animationDuration: '2s'}}>
+          <div className="w-6 h-10 border-2 border-white/30 rounded-full flex justify-center animate-pulse" style={{animationDuration: '3s'}}>
+            <div className="w-1 h-3 bg-white/50 rounded-full mt-2 animate-ping" style={{animationDuration: '2s', animationDelay: '1s'}}></div>
+          </div>
+          <div className="text-center mt-2">
+            <p className="text-xs text-white/70 animate-pulse" style={{animationDuration: '4s', animationDelay: '2s'}}>Scroll Down</p>
           </div>
         </div>
       </section>
 
       {/* Products Section */}
-      <section className="section-padding bg-accent-50">
+      <section id="products" className="section-padding bg-accent-50">
         <div className="container-custom">
           <div className="text-center mb-16">
             <h2 className="text-3xl md:text-4xl font-bold text-accent-800 mb-4">
@@ -79,20 +172,26 @@ export default function AhamadCo() {
             </p>
           </div>
 
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
+          <div className="grid grid-cols-1 xl:grid-cols-2 gap-8">
+            {/* Tata Shaktee */}
             <div className="card p-8">
               <div className="flex items-start space-x-6">
-                <div className="w-20 h-20 bg-gradient-to-br from-primary-500 to-primary-600 rounded-2xl flex items-center justify-center flex-shrink-0">
-                  <Home size={40} className="text-white" />
+                <div className="w-20 h-20 rounded-2xl overflow-hidden flex-shrink-0 bg-white p-2 border border-gray-200">
+                  <Image
+                    src="/images/products/tata-shaktee-logo.png"
+                    alt="Tata Shaktee official logo"
+                    width={80}
+                    height={80}
+                    className="w-full h-full object-contain"
+                  />
                 </div>
                 <div className="flex-1">
-                  <h3 className="text-2xl font-bold text-accent-800 mb-3">Tata Roofing Sheets</h3>
+                  <h3 className="text-2xl font-bold text-accent-800 mb-3">Tata Shaktee</h3>
                   <p className="text-accent-700 mb-4 leading-relaxed">
-                    High-quality galvanized steel roofing sheets designed for durability and weather resistance. 
-                    Perfect for residential and commercial applications.
+                    Tata Steel's flagship brand in galvanized corrugated sheets. Made of virgin steel with uniform zinc coating for superior weather resistance and longevity.
                   </p>
                   <ul className="space-y-2 mb-4">
-                    {['Weather resistant coating', 'Corrosion protection', 'Easy installation', 'Long-lasting durability'].map((feature, index) => (
+                    {['Virgin steel construction', 'Uniform zinc coating', 'Weather resistant', 'Superior durability'].map((feature, index) => (
                       <li key={index} className="flex items-center space-x-2">
                         <Check size={16} className="text-secondary-500 flex-shrink-0" />
                         <span className="text-accent-700">{feature}</span>
@@ -100,26 +199,32 @@ export default function AhamadCo() {
                     ))}
                   </ul>
                   <div className="bg-accent-100 rounded-lg p-4">
-                    <h4 className="font-semibold text-accent-800 mb-1">Specifications:</h4>
-                    <p className="text-sm text-accent-600">Available in various thicknesses and sizes to meet your specific requirements.</p>
+                    <h4 className="font-semibold text-accent-800 mb-1">Application:</h4>
+                    <p className="text-sm text-accent-600">Ideal for roofing applications in residential and commercial buildings.</p>
                   </div>
                 </div>
               </div>
             </div>
 
+            {/* Durashine */}
             <div className="card p-8">
               <div className="flex items-start space-x-6">
-                <div className="w-20 h-20 bg-gradient-to-br from-primary-500 to-primary-600 rounded-2xl flex items-center justify-center flex-shrink-0">
-                  <Cog size={40} className="text-white" />
+                <div className="w-20 h-20 rounded-2xl overflow-hidden flex-shrink-0 bg-white p-2 border border-gray-200">
+                  <Image
+                    src="/images/products/durashine-logo.png"
+                    alt="Durashine official logo"
+                    width={80}
+                    height={80}
+                    className="w-full h-full object-contain"
+                  />
                 </div>
                 <div className="flex-1">
-                  <h3 className="text-2xl font-bold text-accent-800 mb-3">Tata Coils</h3>
+                  <h3 className="text-2xl font-bold text-accent-800 mb-3">Durashine</h3>
                   <p className="text-accent-700 mb-4 leading-relaxed">
-                    Premium steel coils manufactured to the highest standards, suitable for various 
-                    construction and manufacturing applications.
+                    Flagship retail brand of Tata BlueScope Steel. Premium color coated profile sheets for roof and wall solutions. Award-winning quality and trusted performance.
                   </p>
                   <ul className="space-y-2 mb-4">
-                    {['High tensile strength', 'Consistent quality', 'Multiple grades available', 'Custom sizing options'].map((feature, index) => (
+                    {['Color coated profile sheets', 'Roof & wall solutions', 'Award-winning quality', 'Structural products & accessories'].map((feature, index) => (
                       <li key={index} className="flex items-center space-x-2">
                         <Check size={16} className="text-secondary-500 flex-shrink-0" />
                         <span className="text-accent-700">{feature}</span>
@@ -127,49 +232,118 @@ export default function AhamadCo() {
                     ))}
                   </ul>
                   <div className="bg-accent-100 rounded-lg p-4">
-                    <h4 className="font-semibold text-accent-800 mb-1">Specifications:</h4>
-                    <p className="text-sm text-accent-600">Available in different grades and specifications to meet diverse industry needs.</p>
+                    <h4 className="font-semibold text-accent-800 mb-1">Recognition:</h4>
+                    <p className="text-sm text-accent-600">Asia's Most Trusted Brand by International Brand Consulting Corporation, USA.</p>
                   </div>
                 </div>
               </div>
             </div>
-          </div>
-        </div>
-      </section>
 
-      {/* Applications Section */}
-      <section className="section-padding bg-white">
-        <div className="container-custom">
-          <div className="text-center mb-16">
-            <h2 className="text-3xl md:text-4xl font-bold text-accent-800 mb-4">
-              Applications
-            </h2>
-            <p className="text-xl text-accent-600 max-w-2xl mx-auto">
-              Our products serve diverse construction needs across multiple sectors
-            </p>
-          </div>
-
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
-            {[
-              { icon: Building, title: 'Commercial Buildings', desc: 'Office complexes, shopping centers, and commercial structures requiring durable roofing solutions.' },
-              { icon: Home, title: 'Residential Projects', desc: 'Houses, apartments, and residential complexes with reliable and aesthetically pleasing roofing.' },
-              { icon: Cog, title: 'Industrial Facilities', desc: 'Factories, warehouses, and industrial buildings requiring heavy-duty construction materials.' },
-              { icon: Building, title: 'Storage Solutions', desc: 'Storage facilities, cold storage units, and specialized storage buildings.' }
-            ].map((app, index) => (
-              <div key={index} className="card p-6 text-center group hover:shadow-xl transition-all duration-300">
-                <div className="w-16 h-16 bg-gradient-to-br from-primary-500 to-primary-600 rounded-2xl flex items-center justify-center mx-auto mb-4">
-                  <app.icon size={32} className="text-white" />
+            {/* Tata Kosh */}
+            <div className="card p-8">
+              <div className="flex items-start space-x-6">
+                <div className="w-20 h-20 rounded-2xl overflow-hidden flex-shrink-0 bg-white p-2 border border-gray-200">
+                  <Image
+                    src="/images/products/tata-kosh-logo.png"
+                    alt="Tata Kosh official logo"
+                    width={80}
+                    height={80}
+                    className="w-full h-full object-contain"
+                  />
                 </div>
-                <h3 className="text-lg font-bold text-accent-800 mb-3">{app.title}</h3>
-                <p className="text-accent-600 text-sm leading-relaxed">{app.desc}</p>
+                <div className="flex-1">
+                  <h3 className="text-2xl font-bold text-accent-800 mb-3">Tata Kosh</h3>
+                  <p className="text-accent-700 mb-4 leading-relaxed">
+                    GP sheets with spangles designed for fabricators to make storage & utility equipment. Perfect for rural and urban Tier-3 household applications.
+                  </p>
+                  <ul className="space-y-2 mb-4">
+                    {['GP sheets with spangles', 'Storage equipment fabrication', 'Utility applications', 'Rural & urban solutions'].map((feature, index) => (
+                      <li key={index} className="flex items-center space-x-2">
+                        <Check size={16} className="text-secondary-500 flex-shrink-0" />
+                        <span className="text-accent-700">{feature}</span>
+                      </li>
+                    ))}
+                  </ul>
+                  <div className="bg-accent-100 rounded-lg p-4">
+                    <h4 className="font-semibold text-accent-800 mb-1">Applications:</h4>
+                    <p className="text-sm text-accent-600">Trunks, grain silos, tasla, buckets, and other storage equipment.</p>
+                  </div>
+                </div>
               </div>
-            ))}
+            </div>
+
+            {/* Tata Wama */}
+            <div className="card p-8">
+              <div className="flex items-start space-x-6">
+                <div className="w-20 h-20 rounded-2xl overflow-hidden flex-shrink-0 bg-white p-2 border border-gray-200">
+                  <Image
+                    src="/images/products/tata-wama-logo.png"
+                    alt="Tata Wama official logo"
+                    width={80}
+                    height={80}
+                    className="w-full h-full object-contain"
+                  />
+                </div>
+                <div className="flex-1">
+                  <h3 className="text-2xl font-bold text-accent-800 mb-3">Tata Wama</h3>
+                  <p className="text-accent-700 mb-4 leading-relaxed">
+                    "Walling Masters" - Tata Steel's latest offering for walling and fencing needs. Developed exclusively for vertical applications in retail and institutional segments.
+                  </p>
+                  <ul className="space-y-2 mb-4">
+                    {['Vertical applications', 'Walling & fencing solutions', 'Construction site use', 'Temporary structures'].map((feature, index) => (
+                      <li key={index} className="flex items-center space-x-2">
+                        <Check size={16} className="text-secondary-500 flex-shrink-0" />
+                        <span className="text-accent-700">{feature}</span>
+                      </li>
+                    ))}
+                  </ul>
+                  <div className="bg-accent-100 rounded-lg p-4">
+                    <h4 className="font-semibold text-accent-800 mb-1">Uses:</h4>
+                    <p className="text-sm text-accent-600">Fences, barricades, site isolation, temporary residences, small warehouses.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            {/* Palram */}
+            <div className="card p-8">
+              <div className="flex items-start space-x-6">
+                <div className="w-20 h-20 rounded-2xl overflow-hidden flex-shrink-0 bg-white p-2 border border-gray-200">
+                  <Image
+                    src="/images/products/palram-logo.png"
+                    alt="Palram official logo"
+                    width={80}
+                    height={80}
+                    className="w-full h-full object-contain"
+                  />
+                </div>
+                <div className="flex-1">
+                  <h3 className="text-2xl font-bold text-accent-800 mb-3">Palram Products</h3>
+                  <p className="text-accent-700 mb-4 leading-relaxed">
+                    Comprehensive range of polycarbonate sheets including SUNTUF corrugated sheets for architectural, industrial, agricultural, and DIY applications.
+                  </p>
+                  <ul className="space-y-2 mb-4">
+                    {['SUNTUF corrugated sheets', 'PALSUN flat sheets', 'SUNLITE multiwall sheets', 'SOLARSMART specialty products'].map((feature, index) => (
+                      <li key={index} className="flex items-center space-x-2">
+                        <Check size={16} className="text-secondary-500 flex-shrink-0" />
+                        <span className="text-accent-700">{feature}</span>
+                      </li>
+                    ))}
+                  </ul>
+                  <div className="bg-accent-100 rounded-lg p-4">
+                    <h4 className="font-semibold text-accent-800 mb-1">Applications:</h4>
+                    <p className="text-sm text-accent-600">Skylights, sidelights, roofs, architectural and industrial applications.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
           </div>
         </div>
       </section>
 
       {/* Why Choose Us Section */}
-      <section className="section-padding bg-accent-50">
+      <section className="section-padding bg-white border-t border-accent-200">
         <div className="container-custom">
           <div className="text-center mb-16">
             <h2 className="text-3xl md:text-4xl font-bold text-accent-800 mb-4">
@@ -200,89 +374,87 @@ export default function AhamadCo() {
       </section>
 
       {/* Contact Section */}
-      <section className="section-padding bg-white">
+      <section id="contact" className="section-padding bg-accent-50">
         <div className="container-custom">
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
-            <div className="space-y-8">
-              <div>
-                <h2 className="text-3xl font-bold text-accent-800 mb-6">Get in Touch</h2>
-                <p className="text-lg text-accent-700 leading-relaxed">
-                  Ready to start your construction project? Contact us for expert advice and competitive pricing.
+          <div className="max-w-4xl mx-auto text-center">
+            <div className="mb-12">
+              <h2 className="text-3xl md:text-4xl font-bold text-accent-800 mb-6">Get in Touch</h2>
+              <p className="text-xl text-accent-700 leading-relaxed">
+                Ready to start your construction project? Contact us for expert advice and competitive pricing.
+              </p>
+            </div>
+
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-4xl mx-auto mb-12">
+              <div className="flex flex-col items-center text-center bg-white rounded-3xl p-8 hover:shadow-lg transition-all duration-300 border border-accent-200">
+                <div className="w-20 h-20 bg-green-100 rounded-full flex items-center justify-center mb-6">
+                  <MessageCircle size={32} className="text-green-600" />
+                </div>
+                <h4 className="font-bold text-accent-800 text-xl mb-3">WhatsApp</h4>
+                <p className="text-accent-600 mb-4">
+                  <a 
+                    href="https://wa.me/919842448051" 
+                    className="hover:text-green-600 transition-colors duration-300 text-lg font-medium"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    +91 9842448051
+                  </a>
+                </p>
+                <p className="text-accent-500 text-sm">
+                  Get instant quotes and expert advice
                 </p>
               </div>
 
-              <div className="space-y-6">
-                <div className="flex items-start space-x-4">
-                  <div className="w-12 h-12 bg-primary-100 rounded-xl flex items-center justify-center flex-shrink-0">
-                    <Building size={20} className="text-primary-600" />
-                  </div>
-                  <div>
-                    <h4 className="font-semibold text-accent-800 mb-1">Phone</h4>
-                    <p className="text-accent-600">+91 XXX XXX XXXX</p>
-                  </div>
+              <div className="flex flex-col items-center text-center bg-white rounded-3xl p-8 hover:shadow-lg transition-all duration-300 border border-accent-200">
+                <div className="w-20 h-20 bg-blue-100 rounded-full flex items-center justify-center mb-6">
+                  <Mail size={32} className="text-blue-600" />
                 </div>
-
-                <div className="flex items-start space-x-4">
-                  <div className="w-12 h-12 bg-secondary-100 rounded-xl flex items-center justify-center flex-shrink-0">
-                    <Award size={20} className="text-secondary-600" />
-                  </div>
-                  <div>
-                    <h4 className="font-semibold text-accent-800 mb-1">Email</h4>
-                    <p className="text-accent-600">info@ahamadco.com</p>
-                  </div>
-                </div>
+                <h4 className="font-bold text-accent-800 text-xl mb-3">Email</h4>
+                <p className="text-accent-600 mb-4">
+                  <a 
+                    href="mailto:ahamadandco@yahoo.co.in" 
+                    className="hover:text-blue-600 transition-colors duration-300 text-lg font-medium"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    ahamadandco@yahoo.co.in
+                  </a>
+                </p>
+                <p className="text-accent-500 text-sm">
+                  Send us your project details
+                </p>
               </div>
             </div>
 
-            <div className="card p-8">
-              <h3 className="text-2xl font-bold text-accent-800 mb-6">Request a Quote</h3>
-              <form className="space-y-6">
-                <div>
-                  <input
-                    type="text"
-                    placeholder="Your Name"
-                    className="w-full px-4 py-3 border border-accent-300 rounded-xl focus:ring-2 focus:ring-primary-500 focus:border-transparent transition-all duration-300"
-                    required
-                  />
-                </div>
-                <div>
-                  <input
-                    type="email"
-                    placeholder="Your Email"
-                    className="w-full px-4 py-3 border border-accent-300 rounded-xl focus:ring-2 focus:ring-primary-500 focus:border-transparent transition-all duration-300"
-                    required
-                  />
-                </div>
-                <div>
-                  <select className="w-full px-4 py-3 border border-accent-300 rounded-xl focus:ring-2 focus:ring-primary-500 focus:border-transparent transition-all duration-300">
-                    <option value="">Select Product</option>
-                    <option value="roofing-sheets">Tata Roofing Sheets</option>
-                    <option value="coils">Tata Coils</option>
-                    <option value="both">Both Products</option>
-                  </select>
-                </div>
-                <div>
-                  <textarea
-                    placeholder="Project Details & Requirements"
-                    rows={4}
-                    className="w-full px-4 py-3 border border-accent-300 rounded-xl focus:ring-2 focus:ring-primary-500 focus:border-transparent transition-all duration-300 resize-none"
-                    required
-                  />
-                </div>
-                <button
-                  type="submit"
-                  className="w-full btn-primary flex items-center justify-center"
-                >
-                  Request Quote
-                  <ArrowRight size={18} className="ml-2" />
-                </button>
-              </form>
+            {/* Address Section */}
+            <div className="text-center bg-white rounded-2xl p-8 max-w-2xl mx-auto border border-accent-200">
+              <div className="flex items-center justify-center mb-4">
+                <MapPin size={24} className="text-green-600 mr-3" />
+                <h4 className="font-bold text-accent-800 text-lg">Visit Our Office</h4>
+              </div>
+              <p className="text-accent-600 leading-relaxed">
+                62, Madurai Rd, Palakarai, Sangillyandapuram,<br />
+                Tiruchirappalli, Tamil Nadu 620001
+              </p>
             </div>
+
           </div>
         </div>
       </section>
 
       <Footer />
+
+      {/* Fixed WhatsApp Button */}
+      <div className="fixed bottom-6 right-6 z-50">
+        <a
+          href="https://wa.me/919842448051?text=Hi%20Ahamad%20%26%20Co,%20I'm%20interested%20in%20your%20construction%20materials.%20Can%20you%20help%20me%20with%20pricing%20and%20availability?"
+          className="flex items-center justify-center w-16 h-16 bg-green-500 hover:bg-green-600 text-white rounded-full shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-110"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <MessageCircle size={28} />
+        </a>
+      </div>
     </main>
   )
 }
