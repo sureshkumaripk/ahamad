@@ -1,0 +1,118 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1400 800">
+  <!-- Background Gradient -->
+  <defs>
+    <linearGradient id="mainGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#1e40af;stop-opacity:1" />
+      <stop offset="25%" style="stop-color:#1d4ed8;stop-opacity:1" />
+      <stop offset="50%" style="stop-color:#2563eb;stop-opacity:1" />
+      <stop offset="75%" style="stop-color:#10b981;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#059669;stop-opacity:1" />
+    </linearGradient>
+    
+    <!-- Radial overlay -->
+    <radialGradient id="overlay" cx="50%" cy="50%" r="70%">
+      <stop offset="0%" style="stop-color:rgba(255,255,255,0.1);stop-opacity:1" />
+      <stop offset="100%" style="stop-color:rgba(255,255,255,0);stop-opacity:0" />
+    </radialGradient>
+  </defs>
+  
+  <!-- Background -->
+  <rect width="1400" height="800" fill="url(#mainGradient)"/>
+  <rect width="1400" height="800" fill="url(#overlay)"/>
+  
+  <!-- Main Content Area -->
+  <rect x="100" y="150" width="600" height="300" fill="rgba(255,255,255,0.08)" rx="24" stroke="rgba(255,255,255,0.15)" stroke-width="2"/>
+  
+  <!-- Company Title -->
+  <text x="400" y="220" text-anchor="middle" font-family="Arial, sans-serif" font-size="48" font-weight="bold" fill="white">
+    AHAMAD GROUPS
+  </text>
+  <text x="400" y="260" text-anchor="middle" font-family="Arial, sans-serif" font-size="20" fill="rgba(255,255,255,0.9)">
+    Construction &amp; Agricultural Excellence
+  </text>
+  <text x="400" y="290" text-anchor="middle" font-family="Arial, sans-serif" font-size="14" fill="rgba(255,255,255,0.7)">
+    Two Specialized Companies • Premium Products • Trusted Quality
+  </text>
+  
+  <!-- Contact Info -->
+  <rect x="120" y="320" width="560" height="80" fill="rgba(255,255,255,0.05)" rx="16"/>
+  <text x="200" y="350" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="rgba(255,255,255,0.9)">WhatsApp</text>
+  <text x="200" y="370" text-anchor="middle" font-family="Arial, sans-serif" font-size="14" fill="white">+91 9842448051</text>
+  <text x="400" y="350" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="rgba(255,255,255,0.9)">Email</text>
+  <text x="400" y="370" text-anchor="middle" font-family="Arial, sans-serif" font-size="14" fill="white">ahamadandco@yahoo.co.in</text>
+  <text x="600" y="350" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="rgba(255,255,255,0.9)">Location</text>
+  <text x="600" y="370" text-anchor="middle" font-family="Arial, sans-serif" font-size="11" fill="white">Tiruchirappalli, TN</text>
+  
+  <!-- Products Showcase Area -->
+  <rect x="800" y="100" width="500" height="500" fill="rgba(255,255,255,0.05)" rx="24" stroke="rgba(255,255,255,0.1)" stroke-width="2"/>
+  
+  <!-- Section Title -->
+  <text x="1050" y="140" text-anchor="middle" font-family="Arial, sans-serif" font-size="24" font-weight="bold" fill="white">
+    Our Premium Brands
+  </text>
+  <rect x="1000" y="150" width="100" height="2" fill="rgba(16,185,129,0.6)" rx="1"/>
+  
+  <!-- Product Grid -->
+  <!-- Row 1 -->
+  <!-- Tata Shaktee -->
+  <rect x="820" y="180" width="140" height="100" fill="white" rx="16" opacity="0.95"/>
+  <rect x="830" y="190" width="120" height="80" fill="#f0f0f0" rx="12"/>
+  <text x="890" y="220" text-anchor="middle" font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="#000">TATA SHAKTEE</text>
+  <circle cx="860" cy="200" r="2" fill="#aaa"/>
+  <circle cx="875" cy="200" r="2" fill="#aaa"/>
+  <circle cx="890" cy="200" r="2" fill="#aaa"/>
+  <circle cx="905" cy="200" r="2" fill="#aaa"/>
+  <circle cx="920" cy="200" r="2" fill="#aaa"/>
+  <text x="890" y="240" text-anchor="middle" font-family="Arial, sans-serif" font-size="8" fill="#666">Galvanized Corrugated</text>
+  <text x="890" y="255" text-anchor="middle" font-family="Arial, sans-serif" font-size="8" fill="#666">Sheets</text>
+  
+  <!-- Durashine -->
+  <rect x="980" y="180" width="140" height="100" fill="white" rx="16" opacity="0.95"/>
+  <rect x="990" y="190" width="120" height="80" fill="#fff8f0" rx="12"/>
+  <text x="1050" y="220" text-anchor="middle" font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="#1a5490">DURASHINE</text>
+  <rect x="1000" y="230" width="100" height="4" fill="#ff6b35" rx="2"/>
+  <text x="1050" y="255" text-anchor="middle" font-family="Arial, sans-serif" font-size="8" fill="#666">Color Coated Steel</text>
+  
+  <!-- Row 2 -->
+  <!-- Tata Kosh -->
+  <rect x="820" y="300" width="140" height="100" fill="white" rx="16" opacity="0.95"/>
+  <rect x="830" y="310" width="120" height="80" fill="#f8f8f8" rx="12"/>
+  <text x="890" y="340" text-anchor="middle" font-family="Arial, sans-serif" font-size="13" font-weight="bold" fill="#000">TATA KOSH</text>
+  <text x="890" y="365" text-anchor="middle" font-family="Arial, sans-serif" font-size="8" fill="#666">GP Sheets with Spangles</text>
+  
+  <!-- Tata Wama -->
+  <rect x="980" y="300" width="140" height="100" fill="white" rx="16" opacity="0.95"/>
+  <rect x="990" y="310" width="120" height="80" fill="#f5f5f5" rx="12"/>
+  <text x="1050" y="340" text-anchor="middle" font-family="Arial, sans-serif" font-size="13" font-weight="bold" fill="#000">TATA WAMA</text>
+  <text x="1050" y="355" text-anchor="middle" font-family="Arial, sans-serif" font-size="9" fill="#666">Walling Masters</text>
+  <text x="1050" y="370" text-anchor="middle" font-family="Arial, sans-serif" font-size="8" fill="#666">Walling &amp; Fencing</text>
+  
+  <!-- Row 3 -->
+  <!-- Palram -->
+  <rect x="820" y="420" width="140" height="100" fill="white" rx="16" opacity="0.95"/>
+  <rect x="830" y="430" width="120" height="80" fill="#f0f8ff" rx="12"/>
+  <text x="890" y="465" text-anchor="middle" font-family="Arial, sans-serif" font-size="16" font-weight="bold" fill="#2563eb">PALRAM</text>
+  <rect x="840" y="475" width="100" height="3" fill="#10b981" rx="1"/>
+  <text x="890" y="495" text-anchor="middle" font-family="Arial, sans-serif" font-size="8" fill="#666">Polycarbonate Solutions</text>
+  
+  <!-- Tata Agrigo -->
+  <rect x="980" y="420" width="140" height="100" fill="white" rx="16" opacity="0.95"/>
+  <rect x="990" y="430" width="120" height="80" fill="#f0fdf4" rx="12"/>
+  <text x="1050" y="460" text-anchor="middle" font-family="Arial, sans-serif" font-size="13" font-weight="bold" fill="#059669">TATA AGRIGO</text>
+  <circle cx="1020" cy="475" r="2" fill="#10b981"/>
+  <circle cx="1035" cy="475" r="2" fill="#10b981"/>
+  <circle cx="1050" cy="475" r="2" fill="#10b981"/>
+  <circle cx="1065" cy="475" r="2" fill="#10b981"/>
+  <circle cx="1080" cy="475" r="2" fill="#10b981"/>
+  <text x="1050" y="495" text-anchor="middle" font-family="Arial, sans-serif" font-size="8" fill="#666">Agricultural Tools</text>
+  
+  <!-- Decorative Background Elements -->
+  <circle cx="200" cy="600" r="40" fill="rgba(255,255,255,0.03)" stroke="rgba(255,255,255,0.08)" stroke-width="2"/>
+  <rect x="500" y="550" width="60" height="60" fill="rgba(255,255,255,0.03)" rx="12" transform="rotate(25 530 580)"/>
+  <polygon points="1200,200 1220,180 1240,200 1220,220" fill="rgba(255,255,255,0.05)"/>
+  <circle cx="1300" cy="400" r="25" fill="rgba(16,185,129,0.1)" stroke="rgba(16,185,129,0.2)" stroke-width="2"/>
+  
+  <!-- Bottom Accent -->
+  <rect x="0" y="750" width="1400" height="50" fill="rgba(16,185,129,0.2)"/>
+  <rect x="200" y="760" width="1000" height="30" fill="rgba(37,99,235,0.2)" rx="15"/>
+</svg>
