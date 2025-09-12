@@ -1,6 +1,7 @@
 'use client'
 
 import { useState } from 'react'
+import Image from 'next/image'
 import AhamadAgenciesNavbar from '@/components/AhamadAgenciesNavbar'
 import Footer from '@/components/Footer'
 import { Sprout, Tractor, Beaker, Shield, Wrench, Wheat, Leaf, Carrot, Flower2, GraduationCap, Microscope, TrendingUp, Truck, Award, Users, Users2, Globe, ArrowRight, Check, X, Hammer, FileText, Scissors, Settings, Zap, Grip, Droplets, HardHat, Cog, LucideIcon, MessageCircle, Phone, Mail, MapPin } from 'lucide-react'
@@ -212,9 +213,11 @@ export default function AhamadAgencies() {
                   <div className={`${category.bgColor} p-8 flex items-center justify-center relative`}>
                     <div className="absolute inset-0 bg-gradient-to-br from-transparent to-white/20"></div>
                     <div className="relative z-10">
-                      <img 
+                      <Image 
                         src={category.image} 
                         alt={category.category}
+                        width={160}
+                        height={160}
                         className="w-40 h-40 object-contain group-hover:scale-110 transition-transform duration-500"
                       />
                     </div>
