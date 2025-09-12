@@ -95,7 +95,7 @@ export default function Footer() {
         {/* Bottom Bar */}
         <div className="border-t border-accent-700 py-6">
           <div className="text-center text-accent-300">
-            <p>&copy; 2024 Ahamad Groups. All rights reserved.</p>
+            <p>&copy; 2024 Ahamad & Co Groups. All rights reserved.</p>
           </div>
         </div>
       </div>

@@ -1,4 +1,4 @@
-import Navbar from '@/components/Navbar'
+import AhamadCompanyNavbar from '@/components/AhamadCompanyNavbar'
 import Footer from '@/components/Footer'
 import Image from 'next/image'
 import { Building, Home, Cog, Check, ArrowRight, Award, Truck, Users, Users2, Phone, Mail, MessageCircle, MapPin } from 'lucide-react'
@@ -6,12 +6,7 @@ import { Building, Home, Cog, Check, ArrowRight, Award, Truck, Users, Users2, Ph
 export default function AhamadCo() {
   return (
     <main className="min-h-screen">
-      <Navbar 
-        companyName="Ahamad & Co"
-        companyLogo="Ahamad & Co"
-        logoColor="text-blue-800"
-        hoverColor="hover:text-blue-600"
-      />
+      <AhamadCompanyNavbar />
       
       {/* Hero Section */}
       <section className="relative gradient-bg text-white min-h-screen flex items-center overflow-hidden pt-28">

@@ -1,4 +1,4 @@
-import Navbar from '@/components/Navbar'
+import AhamadGroupNavbar from '@/components/AhamadGroupNavbar'
 import Footer from '@/components/Footer'
 import Image from 'next/image'
 import Link from 'next/link'
@@ -7,12 +7,7 @@ import { Building, Sprout, ArrowRight, Check, MessageCircle, Phone, Mail, MapPin
 export default function Home() {
   return (
     <main className="min-h-screen">
-      <Navbar 
-        companyName="Ahamad Groups"
-        companyLogo="Ahamad Groups"
-        logoColor="text-accent-800"
-        hoverColor="hover:text-primary-600"
-      />
+      <AhamadGroupNavbar />
       
       {/* Hero Section */}
       <section className="relative min-h-screen flex items-center overflow-hidden pt-20" style={{
