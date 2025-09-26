@@ -144,7 +144,7 @@ export default function Contact() {
                 >
                   <option value="">Choose a company</option>
                   <option value="ahamad-co">Ahamad & Co</option>
-                  <option value="ahamad-agencies">AHAMAD Agencies</option>
+                  <option value="ahamad-agencies">AHAMED Agencies</option>
                 </select>
               </div>
 

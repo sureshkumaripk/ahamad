@@ -49,7 +49,7 @@ export default function Home() {
               <p className="text-xl md:text-2xl text-blue-100 leading-relaxed animate-pulse" style={{animationDuration: '6s', animationDelay: '2s'}}>
                 Two specialized companies delivering <span className="text-white font-semibold">premium solutions</span> - 
                 <span className="text-blue-200 font-semibold"> Ahamad & Co</span> for construction materials 
-                and <span className="text-green-200 font-semibold"> AHAMAD Agencies</span> for agricultural tools.
+                and <span className="text-green-200 font-semibold"> AHAMED Agencies</span> for agricultural tools.
               </p>
 
               {/* Animated Stats */}
@@ -294,14 +294,14 @@ export default function Home() {
               </Link>
             </div>
 
-            {/* AHAMAD Agencies Detailed */}
+            {/* AHAMED Agencies Detailed */}
             <div className="bg-white rounded-3xl p-8 shadow-lg hover:shadow-2xl transition-all duration-500 border border-accent-200">
               <div className="flex items-center space-x-4 mb-8">
                 <div className="w-20 h-20 bg-gradient-to-br from-secondary-500 to-secondary-600 rounded-2xl flex items-center justify-center">
                   <Sprout size={36} className="text-white" />
                 </div>
                 <div>
-                  <h3 className="text-3xl font-bold text-accent-800">AHAMAD Agencies</h3>
+                  <h3 className="text-3xl font-bold text-accent-800">AHAMED Agencies</h3>
                   <p className="text-accent-600 text-lg">Agricultural & Construction Tools</p>
                 </div>
               </div>

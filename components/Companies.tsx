@@ -53,14 +53,14 @@ export default function Companies() {
             </Link>
           </div>
 
-          {/* AHAMAD Agencies */}
+          {/* AHAMED Agencies */}
           <div className="card p-8 group hover:shadow-2xl transition-all duration-500">
             <div className="flex items-center space-x-4 mb-6">
               <div className="w-16 h-16 bg-gradient-to-br from-secondary-500 to-secondary-600 rounded-2xl flex items-center justify-center">
                 <Sprout size={32} className="text-white" />
               </div>
               <div>
-                <h3 className="text-2xl font-bold text-accent-800">AHAMAD Agencies</h3>
+                <h3 className="text-2xl font-bold text-accent-800">AHAMED Agencies</h3>
                 <p className="text-accent-600">Tools & Equipment Solutions</p>
               </div>
             </div>

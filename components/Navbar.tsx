@@ -122,7 +122,7 @@ export default function Navbar({
             }`}>
               <div className="flex items-center space-x-2">
                 <Sprout size={18} />
-                <span>AHAMAD Agencies</span>
+                <span>AHAMED Agencies</span>
               </div>
               {isActive('/ahamad-agencies') && (
                 <span className={`absolute -bottom-1 left-1/2 transform -translate-x-1/2 w-6 h-0.5 rounded-full ${
@@ -204,7 +204,7 @@ export default function Navbar({
               >
                 <Sprout size={20} />
                 <div>
-                  <div>AHAMAD Agencies</div>
+                  <div>AHAMED Agencies</div>
                   <div className="text-xs text-accent-500">Agricultural Tools</div>
                 </div>
               </Link>

@@ -45,11 +45,11 @@ export default function AhamadAgenciesNavbar() {
 
   const products = [
     { name: 'Agri & Construction', href: '/ahamad-agencies/agri-construction-tools', icon: Wrench },
-    { name: 'DIY Tools', href: '/ahamad-agencies#diy-tools', icon: Hammer },
-    { name: 'Filing Tools', href: '/ahamad-agencies#filing-tools', icon: Zap },
-    { name: 'Garden Tools', href: '/ahamad-agencies#garden-tools', icon: Flower2 },
-    { name: 'Industrial & Hardware', href: '/ahamad-agencies#industrial-hardware', icon: Settings },
-    { name: 'Trade Hand Tools', href: '/ahamad-agencies#trade-hand-tools', icon: Shield },
+    { name: 'DIY Tools', href: '/ahamad-agencies/diy-tools', icon: Hammer },
+    { name: 'Filing Tools', href: '/ahamad-agencies/filing-tools', icon: Zap },
+    { name: 'Garden Tools', href: '/ahamad-agencies/garden-tools', icon: Flower2 },
+    { name: 'Industrial & Hardware', href: '/ahamad-agencies/industrial-hardware', icon: Settings },
+    { name: 'Trade Hand Tools', href: '/ahamad-agencies/trade-hand-tools', icon: Shield },
   ];
 
   return (
@@ -65,7 +65,7 @@ export default function AhamadAgenciesNavbar() {
             <div className="relative w-40 h-24">
               <Image
                 src="/images/ahamad-agencies-logo-new.png"
-                alt="AHAMAD Agencies"
+                alt="AHAMED Agencies"
                 width={160}
                 height={96}
                 className="w-full h-full object-contain"

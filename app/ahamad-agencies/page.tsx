@@ -257,7 +257,7 @@ export default function AhamadAgencies() {
         <div className="container-custom">
           <div className="text-center mb-16">
             <h2 className="text-3xl md:text-4xl font-bold text-accent-800 mb-4">
-              Why Choose AHAMAD Agencies?
+              Why Choose AHAMED Agencies?
             </h2>
             <p className="text-xl text-accent-600 max-w-2xl mx-auto">
               Your partner in agricultural success
@@ -356,7 +356,7 @@ export default function AhamadAgencies() {
       {/* Fixed WhatsApp Button */}
       <div className="fixed bottom-6 right-6 z-50">
         <a
-          href="https://wa.me/919842448051?text=Hi%20AHAMAD%20Agencies,%20I'm%20interested%20in%20your%20agricultural%20tools%20and%20equipment.%20Can%20you%20help%20me%20with%20product%20information%20and%20pricing?"
+          href="https://wa.me/919842448051?text=Hi%20AHAMED%20Agencies,%20I'm%20interested%20in%20your%20agricultural%20tools%20and%20equipment.%20Can%20you%20help%20me%20with%20product%20information%20and%20pricing?"
           className="flex items-center justify-center w-16 h-16 bg-green-500 hover:bg-green-600 text-white rounded-full shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-110"
           target="_blank"
           rel="noopener noreferrer"

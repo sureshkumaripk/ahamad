@@ -5,16 +5,11 @@ import Link from 'next/link';
 import AhamadAgenciesNavbar from '@/components/AhamadAgenciesNavbar';
 import Footer from '@/components/Footer';
 import { 
-  ArrowLeft, 
-  MessageCircle, 
-  Mail, 
-  MapPin,
-  Zap,
+  MessageCircle,
   Shield,
-  Grip,
   Wrench,
   Settings,
-  Hammer
+  Grip
 } from 'lucide-react';
 
 export default function IndustrialHardware() {
@@ -29,68 +24,17 @@ export default function IndustrialHardware() {
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
 
-  const subcategories = [
-    {
-      title: 'Fasteners',
-      icon: Shield,
-      color: 'from-blue-500 to-blue-600',
-      description: 'Essential fastening hardware for construction and manufacturing',
-      tools: ['Bolts', 'Nuts', 'Washers', 'Screws', 'Rivets', 'Anchors']
-    },
-    {
-      title: 'Hand Tools',
-      icon: Wrench,
-      color: 'from-green-500 to-green-600',
-      description: 'Professional hand tools for industrial applications',
-      tools: ['Wrenches', 'Pliers', 'Hammers', 'Screwdrivers', 'Sockets', 'Ratchets']
-    },
-    {
-      title: 'Power Tools',
-      icon: Settings,
-      color: 'from-purple-500 to-purple-600',
-      description: 'Heavy-duty power tools for industrial work',
-      tools: ['Drills', 'Grinders', 'Saws', 'Impact Wrenches', 'Sanders', 'Cutters']
-    },
-    {
-      title: 'Safety Equipment',
-      icon: Hammer,
-      color: 'from-red-500 to-red-600',
-      description: 'Industrial safety gear and protective equipment',
-      tools: ['Hard Hats', 'Safety Glasses', 'Gloves', 'Ear Protection', 'Respirators', 'Safety Vests']
-    },
-    {
-      title: 'Measuring Tools',
-      icon: Zap,
-      color: 'from-yellow-500 to-yellow-600',
-      description: 'Precision measuring instruments for industrial use',
-      tools: ['Calipers', 'Micrometers', 'Levels', 'Squares', 'Tape Measures', 'Gauges']
-    },
-    {
-      title: 'Hardware Accessories',
-      icon: Grip,
-      color: 'from-orange-500 to-orange-600',
-      description: 'Supporting hardware and accessories',
-      tools: ['Chains', 'Cables', 'Hooks', 'Clamps', 'Brackets', 'Hinges']
-    }
-  ];
 
   return (
     <main className="min-h-screen">
       <AhamadAgenciesNavbar />
       <div className="min-h-screen bg-gradient-to-br from-accent-50 to-secondary-50">
         {/* Hero Section */}
-        <section className="relative pt-20 pb-16 overflow-hidden">
+        <section className="relative pt-32 pb-16 overflow-hidden">
           <div className="absolute inset-0 bg-gradient-to-br from-blue-400/10 via-purple-400/10 to-orange-400/10"></div>
           
           <div className="container-custom relative z-10">
             <div className="text-center mb-12">
-              <Link 
-                href="/ahamad-agencies" 
-                className="inline-flex items-center gap-2 text-accent-600 hover:text-accent-800 transition-colors duration-300 mb-8"
-              >
-                <ArrowLeft className="w-5 h-5" />
-                Back to AHAMAD Agencies
-              </Link>
 
               <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-accent-800 mb-6">
                 Industrial & Hardware
@@ -129,160 +73,88 @@ export default function IndustrialHardware() {
           </div>
         </section>
 
-        {/* Subcategories Section */}
-        <section className="py-16">
+        {/* Products Section */}
+        <section className="section-padding bg-white">
           <div className="container-custom">
-            <div className="text-center mb-12">
+            <div className="text-center mb-16">
               <h2 className="text-3xl md:text-4xl font-bold text-accent-800 mb-4">
-                Industrial Hardware Categories
+                Our Industrial & Hardware Range
               </h2>
-              <p className="text-lg text-accent-600 max-w-2xl mx-auto">
-                Complete range of industrial-grade hardware and tools for professional applications
+              <p className="text-xl text-accent-600 max-w-2xl mx-auto">
+                Professional industrial hardware and tools for manufacturing, construction, and maintenance
               </p>
             </div>
 
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-              {subcategories.map((category, index) => {
-                const Icon = category.icon;
-                return (
-                  <div 
-                    key={category.title}
-                    className="bg-white rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-500 border border-accent-100 hover:border-secondary-200 transform hover:-translate-y-2 overflow-hidden"
-                    style={{
-                      animationDelay: `${index * 0.1}s`,
-                      animationDuration: '0.6s'
-                    }}
-                  >
-                    <div className="p-8">
-                      <div className={`w-16 h-16 bg-gradient-to-br ${category.color} rounded-2xl flex items-center justify-center mb-6`}>
-                        <Icon className="w-8 h-8 text-white" />
-                      </div>
-                      
-                      <h3 className="text-2xl font-bold text-accent-800 mb-4">{category.title}</h3>
-                      <p className="text-secondary-600 mb-6">{category.description}</p>
-                      
-                      <div className="space-y-2">
-                        <h4 className="font-semibold text-accent-700 mb-3">Available Tools:</h4>
-                        <div className="grid grid-cols-2 gap-2">
-                          {category.tools.map((tool, toolIndex) => (
-                            <div key={toolIndex} className="flex items-center space-x-2">
-                              <div className="w-2 h-2 bg-green-500 rounded-full"></div>
-                              <span className="text-sm text-accent-600">{tool}</span>
-                            </div>
-                          ))}
-                        </div>
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-8">
+              {[
+                {
+                  name: "Concrete Nails",
+                  image: "https://www.tataagrico.com/wp-content/uploads/2025/03/Concrete-Nails-feature-image.webp",
+                  variations: 11
+                },
+                {
+                  name: "Flap Disc",
+                  image: "https://www.tataagrico.com/wp-content/uploads/2024/12/Tata-Agrico-Flap-disc-460-01.webp",
+                  variations: 1
+                },
+                {
+                  name: "Carpentry Nails",
+                  image: "https://www.tataagrico.com/wp-content/uploads/2024/12/Tata-Agrico-TN0214-Carpentary-nails.webp",
+                  variations: 35
+                },
+                {
+                  name: "Cutting Wheels",
+                  image: "https://www.tataagrico.com/wp-content/uploads/2024/12/3.jpg",
+                  variations: 17
+                },
+                {
+                  name: "Dry Wall Screws",
+                  image: "https://www.tataagrico.com/wp-content/uploads/2024/12/dry-wall-screws.webp",
+                  variations: 14
+                },
+                {
+                  name: "Electrodes",
+                  image: "https://www.tataagrico.com/wp-content/uploads/2024/12/3-53.jpg",
+                  variations: "3 TYPES & 6 VARIATIONS"
+                },
+                {
+                  name: "Grinding Wheels",
+                  image: "https://www.tataagrico.com/wp-content/uploads/2024/12/3-4.jpg",
+                  variations: 3
+                },
+                {
+                  name: "High Tensile Fasteners",
+                  image: "https://www.tataagrico.com/wp-content/uploads/2025/03/HT-fasteners.jpg",
+                  variations: 2
+                },
+                {
+                  name: "Self Drilling Screws",
+                  image: "https://www.tataagrico.com/wp-content/uploads/2024/12/3-12.jpg",
+                  variations: "3 TYPES & 12 VARIATIONS"
+                }
+              ].map((product, index) => (
+                <div key={index} className="group">
+                  <div className="bg-white rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-500 border border-accent-100 hover:border-secondary-200 transform hover:-translate-y-2 overflow-hidden">
+                    <div className="aspect-square bg-gray-50 flex items-center justify-center p-6">
+                      <img 
+                        src={product.image} 
+                        alt={product.name}
+                        className="max-w-full max-h-full object-contain group-hover:scale-110 transition-transform duration-300"
+                      />
+                    </div>
+                    
+                    <div className="p-6">
+                      <h3 className="text-lg font-bold text-accent-800 mb-2">{product.name}</h3>
+                      <div className="flex items-center justify-between">
+                        <span className="text-sm text-accent-600">Available in</span>
+                        <span className="text-sm font-semibold text-secondary-600 bg-secondary-100 px-3 py-1 rounded-full">
+                          {product.variations} {typeof product.variations === 'number' ? 'VARIATIONS' : ''}
+                        </span>
                       </div>
                     </div>
                   </div>
-                );
-              })}
-            </div>
-          </div>
-        </section>
-
-        {/* Why Choose Us Section */}
-        <section className="py-16 bg-white">
-          <div className="container-custom">
-            <div className="text-center mb-12">
-              <h2 className="text-3xl md:text-4xl font-bold text-accent-800 mb-4">
-                Why Choose Our Industrial Hardware?
-              </h2>
-              <p className="text-lg text-accent-600 max-w-2xl mx-auto">
-                Professional-grade industrial hardware that meets the highest standards for durability and performance
-              </p>
-            </div>
-
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-              <div className="text-center">
-                <div className="w-16 h-16 bg-gradient-to-br from-blue-500 to-blue-600 rounded-full flex items-center justify-center mx-auto mb-4">
-                  <Shield className="w-8 h-8 text-white" />
                 </div>
-                <h3 className="text-xl font-bold text-accent-800 mb-3">Industrial Grade</h3>
-                <p className="text-accent-600">Heavy-duty hardware designed for demanding industrial applications</p>
-              </div>
-              
-              <div className="text-center">
-                <div className="w-16 h-16 bg-gradient-to-br from-green-500 to-green-600 rounded-full flex items-center justify-center mx-auto mb-4">
-                  <Settings className="w-8 h-8 text-white" />
-                </div>
-                <h3 className="text-xl font-bold text-accent-800 mb-3">Precision Tools</h3>
-                <p className="text-accent-600">High-precision measuring and cutting tools for accurate work</p>
-              </div>
-              
-              <div className="text-center">
-                <div className="w-16 h-16 bg-gradient-to-br from-red-500 to-red-600 rounded-full flex items-center justify-center mx-auto mb-4">
-                  <Hammer className="w-8 h-8 text-white" />
-                </div>
-                <h3 className="text-xl font-bold text-accent-800 mb-3">Safety First</h3>
-                <p className="text-accent-600">Complete safety equipment to protect workers in industrial environments</p>
-              </div>
-            </div>
-          </div>
-        </section>
-
-        {/* Contact Section */}
-        <section id="contact" className="py-16 bg-accent-50">
-          <div className="container-custom">
-            <div className="text-center mb-12">
-              <h2 className="text-3xl md:text-4xl font-bold text-accent-800 mb-4">
-                Get in Touch
-              </h2>
-              <p className="text-lg text-accent-600 max-w-2xl mx-auto">
-                Need industrial hardware solutions? Contact us for expert advice and quality products
-              </p>
-            </div>
-
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-4xl mx-auto">
-              <div className="bg-white rounded-2xl p-8 text-center shadow-lg border border-accent-200">
-                <div className="w-16 h-16 bg-green-100 rounded-full flex items-center justify-center mx-auto mb-4">
-                  <MessageCircle className="w-8 h-8 text-green-600" />
-                </div>
-                <h3 className="text-xl font-bold text-accent-800 mb-2">WhatsApp</h3>
-                <p className="text-accent-600 mb-4">Quick responses and instant support</p>
-                <a
-                  href="https://wa.me/919842448051?text=Hi, I'm interested in Industrial & Hardware"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="inline-flex items-center space-x-2 bg-green-600 text-white px-6 py-3 rounded-lg hover:bg-green-700 transition-colors duration-300"
-                >
-                  <MessageCircle className="w-5 h-5" />
-                  <span>Chat Now</span>
-                </a>
-              </div>
-
-              <div className="bg-white rounded-2xl p-8 text-center shadow-lg border border-accent-200">
-                <div className="w-16 h-16 bg-blue-100 rounded-full flex items-center justify-center mx-auto mb-4">
-                  <Mail className="w-8 h-8 text-blue-600" />
-                </div>
-                <h3 className="text-xl font-bold text-accent-800 mb-2">Email</h3>
-                <p className="text-accent-600 mb-4">Detailed inquiries and quotes</p>
-                <a
-                  href="mailto:ahamadandco@yahoo.co.in?subject=Industrial & Hardware Inquiry"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="inline-flex items-center space-x-2 bg-blue-600 text-white px-6 py-3 rounded-lg hover:bg-blue-700 transition-colors duration-300"
-                >
-                  <Mail className="w-5 h-5" />
-                  <span>Send Email</span>
-                </a>
-              </div>
-
-              <div className="bg-white rounded-2xl p-8 text-center shadow-lg border border-accent-200">
-                <div className="w-16 h-16 bg-purple-100 rounded-full flex items-center justify-center mx-auto mb-4">
-                  <MapPin className="w-8 h-8 text-purple-600" />
-                </div>
-                <h3 className="text-xl font-bold text-accent-800 mb-2">Visit Us</h3>
-                <p className="text-accent-600 mb-4">62, Madurai Rd, Palakarai, Sangillyandapuram, Tiruchirappalli, Tamil Nadu 620001</p>
-                <a
-                  href="https://maps.google.com/?q=62, Madurai Rd, Palakarai, Sangillyandapuram, Tiruchirappalli, Tamil Nadu 620001"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="inline-flex items-center space-x-2 bg-purple-600 text-white px-6 py-3 rounded-lg hover:bg-purple-700 transition-colors duration-300"
-                >
-                  <MapPin className="w-5 h-5" />
-                  <span>Get Directions</span>
-                </a>
-              </div>
+              ))}
             </div>
           </div>
         </section>
