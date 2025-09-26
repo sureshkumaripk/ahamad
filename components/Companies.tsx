@@ -91,7 +91,7 @@ export default function Companies() {
             </div>
 
             <Link 
-              href="/ahamad-agencies" 
+              href="/ahamed-agencies" 
               className="btn-outline inline-flex items-center group-hover:bg-secondary-600 group-hover:text-white transition-all duration-300"
             >
               Learn More

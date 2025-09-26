@@ -25,7 +25,7 @@ export default function Footer() {
                   </Link>
                 </li>
                 <li>
-                  <Link href="/ahamad-agencies" className="text-accent-300 hover:text-white transition-colors">
+                  <Link href="/ahamed-agencies" className="text-accent-300 hover:text-white transition-colors">
                     AHAMED Agencies
                   </Link>
                 </li>

@@ -69,7 +69,7 @@ export default function Home() {
                 <Link href="/ahamad-co" className="bg-white text-blue-600 px-8 py-4 rounded-2xl font-semibold hover:bg-blue-50 transition-all duration-300 shadow-lg hover:shadow-xl hover:scale-105 hover:-translate-y-1 animate-pulse" style={{animationDuration: '5s', animationDelay: '4s'}}>
                   Construction Materials
                 </Link>
-                <Link href="/ahamad-agencies" className="bg-white/20 backdrop-blur-sm border border-white/30 px-8 py-4 rounded-2xl font-semibold hover:bg-white/30 transition-all duration-300 hover:scale-105 hover:-translate-y-1 animate-pulse" style={{animationDuration: '5s', animationDelay: '4.5s'}}>
+                <Link href="/ahamed-agencies" className="bg-white/20 backdrop-blur-sm border border-white/30 px-8 py-4 rounded-2xl font-semibold hover:bg-white/30 transition-all duration-300 hover:scale-105 hover:-translate-y-1 animate-pulse" style={{animationDuration: '5s', animationDelay: '4.5s'}}>
                   Agricultural Tools
                 </Link>
               </div>
@@ -161,18 +161,18 @@ export default function Home() {
                     <p className="text-xs text-blue-200">Polycarbonate</p>
                   </div>
 
-                  {/* Tata Agrigo */}
+                  {/* Tata Agrico */}
                   <div className="bg-white/10 backdrop-blur-sm rounded-2xl p-4 text-center border border-white/20 hover:bg-white/20 hover:scale-105 transition-all duration-300 animate-pulse" style={{animationDuration: '4s', animationDelay: '8.5s'}}>
                     <div className="w-12 h-12 bg-white rounded-xl p-2 mx-auto mb-3 hover:rotate-3 transition-transform duration-300">
                       <Image
                         src="/images/products/tata-agrigo-logo.png"
-                        alt="Tata Agrigo"
+                        alt="Tata Agrico"
                         width={48}
                         height={48}
                         className="w-full h-full object-contain"
                       />
                     </div>
-                    <h4 className="font-bold text-sm mb-1 text-white">Tata Agrigo</h4>
+                    <h4 className="font-bold text-sm mb-1 text-white">Tata Agrico</h4>
                     <p className="text-xs text-blue-200">Agricultural Tools</p>
                   </div>
                 </div>
@@ -341,7 +341,7 @@ export default function Home() {
               </div>
 
               <Link 
-                href="/ahamad-agencies" 
+                href="/ahamed-agencies" 
                 className="w-full bg-gradient-to-r from-secondary-500 to-secondary-600 text-white px-6 py-4 rounded-2xl font-semibold hover:from-secondary-600 hover:to-secondary-700 transition-all duration-300 flex items-center justify-center space-x-2"
               >
                 <span>Explore Tools & Equipment</span>

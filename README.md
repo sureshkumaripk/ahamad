@@ -7,7 +7,7 @@ A modern, responsive corporate website built with Next.js and Tailwind CSS for A
 Ahamad Groups is a diversified business conglomerate with two specialized companies:
 
 1. **Ahamad & Co** - Specializing in Tata roofing sheets and coils for construction
-2. **AHAMAD Agencies** - Distributing Tata Agrigo products for agricultural solutions
+2. **AHAMED Agencies** - Distributing Tata Agrico products for agricultural solutions
 
 ## Features
 
@@ -26,9 +26,9 @@ Ahamad Groups is a diversified business conglomerate with two specialized compan
 - Why choose us section with key benefits
 - Contact form for quote requests
 
-### AHAMAD Agencies Page (`/ahamad-agencies`)
+### AHAMED Agencies Page (`/ahamed-agencies`)
 - Dedicated page for agricultural products
-- Comprehensive Tata Agrigo product range
+- Comprehensive Tata Agrico product range
 - Services including farmer training and soil testing
 - Agricultural applications across different crop types
 - Contact form for product information requests
@@ -55,7 +55,7 @@ ahamad/
 │   ├── page.tsx           # Main landing page
 │   ├── ahamad-co/         # Ahamad & Co page
 │   │   └── page.tsx
-│   └── ahamad-agencies/   # AHAMAD Agencies page
+│   └── ahamed-agencies/   # AHAMED Agencies page
 │       └── page.tsx
 ├── components/            # Reusable React components
 │   ├── Navbar.tsx

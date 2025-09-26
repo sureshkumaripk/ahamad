@@ -39,17 +39,17 @@ export default function AhamadAgenciesNavbar() {
 
   const navigation = [
     { name: 'Home', href: '/', icon: Home },
-    { name: 'Contact', href: '/ahamad-agencies#contact', icon: Phone },
+    { name: 'Contact', href: '/ahamed-agencies#contact', icon: Phone },
     { name: 'Ahamad & Co', href: '/ahamad-co', icon: Building },
   ];
 
   const products = [
-    { name: 'Agri & Construction', href: '/ahamad-agencies/agri-construction-tools', icon: Wrench },
-    { name: 'DIY Tools', href: '/ahamad-agencies/diy-tools', icon: Hammer },
-    { name: 'Filing Tools', href: '/ahamad-agencies/filing-tools', icon: Zap },
-    { name: 'Garden Tools', href: '/ahamad-agencies/garden-tools', icon: Flower2 },
-    { name: 'Industrial & Hardware', href: '/ahamad-agencies/industrial-hardware', icon: Settings },
-    { name: 'Trade Hand Tools', href: '/ahamad-agencies/trade-hand-tools', icon: Shield },
+    { name: 'Agri & Construction', href: '/ahamed-agencies/agri-construction-tools', icon: Wrench },
+    { name: 'DIY Tools', href: '/ahamed-agencies/diy-tools', icon: Hammer },
+    { name: 'Filing Tools', href: '/ahamed-agencies/filing-tools', icon: Zap },
+    { name: 'Garden Tools', href: '/ahamed-agencies/garden-tools', icon: Flower2 },
+    { name: 'Industrial & Hardware', href: '/ahamed-agencies/industrial-hardware', icon: Settings },
+    { name: 'Trade Hand Tools', href: '/ahamed-agencies/trade-hand-tools', icon: Shield },
   ];
 
   return (
@@ -61,7 +61,7 @@ export default function AhamadAgenciesNavbar() {
       <div className="container-custom">
         <div className="flex items-center justify-between h-24">
           {/* Logo */}
-          <Link href="/ahamad-agencies" className="flex items-center">
+          <Link href="/ahamed-agencies" className="flex items-center">
             <div className="relative w-40 h-24">
               <Image
                 src="/images/ahamad-agencies-logo-new.png"

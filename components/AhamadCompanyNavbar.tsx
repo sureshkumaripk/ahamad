@@ -40,7 +40,7 @@ export default function AhamadCompanyNavbar() {
   const navigation = [
     { name: 'Home', href: '/', icon: Home },
     { name: 'Contact', href: '/ahamad-co#contact', icon: Phone },
-    { name: 'AHAMED Agencies', href: '/ahamad-agencies', icon: Sprout },
+    { name: 'AHAMED Agencies', href: '/ahamed-agencies', icon: Sprout },
   ];
 
   const products = [

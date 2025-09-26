@@ -113,8 +113,8 @@ export default function Navbar({
               )}
             </Link>
             
-            <Link href="/ahamad-agencies" className={`font-medium transition-colors duration-500 relative group px-4 py-2 rounded-lg ${
-              isActive('/ahamad-agencies') 
+            <Link href="/ahamed-agencies" className={`font-medium transition-colors duration-500 relative group px-4 py-2 rounded-lg ${
+              isActive('/ahamed-agencies') 
                 ? (isScrolled ? 'text-secondary-600 bg-secondary-50' : 'text-white bg-white/20')
                 : (isScrolled 
                     ? 'text-accent-700 hover:text-secondary-600 hover:bg-secondary-50' 
@@ -124,7 +124,7 @@ export default function Navbar({
                 <Sprout size={18} />
                 <span>AHAMED Agencies</span>
               </div>
-              {isActive('/ahamad-agencies') && (
+              {isActive('/ahamed-agencies') && (
                 <span className={`absolute -bottom-1 left-1/2 transform -translate-x-1/2 w-6 h-0.5 rounded-full ${
                   isScrolled ? 'bg-secondary-600' : 'bg-white'
                 }`}></span>
@@ -194,9 +194,9 @@ export default function Navbar({
               </Link>
               
               <Link 
-                href="/ahamad-agencies" 
+                href="/ahamed-agencies" 
                 className={`flex items-center space-x-3 px-4 py-3 rounded-lg font-medium transition-all duration-300 ${
-                  isActive('/ahamad-agencies') 
+                  isActive('/ahamed-agencies') 
                     ? 'text-secondary-600 bg-secondary-50 border-l-4 border-secondary-600' 
                     : 'text-accent-700 hover:text-secondary-600 hover:bg-secondary-50'
                 }`}

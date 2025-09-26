@@ -7,7 +7,7 @@ const inter = Inter({ subsets: ['latin'] })
 export const metadata: Metadata = {
   title: 'Ahamad Groups - Corporate Portal',
   description: 'Leading the way in construction and agricultural solutions with trusted Tata products.',
-  keywords: 'Ahamad Groups, Tata roofing sheets, Tata coils, Tata Agrigo, construction materials, agricultural products',
+  keywords: 'Ahamad Groups, Tata roofing sheets, Tata coils, Tata Agrico, construction materials, agricultural products',
 }
 
 export default function RootLayout({

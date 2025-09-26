@@ -25,7 +25,7 @@ export default function AhamadGroupNavbar() {
   const navigation = [
     { name: 'Home', href: '/', icon: Home },
     { name: 'Ahamad & Company', href: '/ahamad-co', icon: Building },
-    { name: 'Ahamed Agencies', href: '/ahamad-agencies', icon: Sprout },
+    { name: 'Ahamed Agencies', href: '/ahamed-agencies', icon: Sprout },
     { name: 'Contact', href: '/#contact', icon: Phone },
   ];
 

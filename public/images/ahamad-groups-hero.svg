@@ -98,7 +98,7 @@
   <!-- Tata Agrigo -->
   <rect x="980" y="420" width="140" height="100" fill="white" rx="16" opacity="0.95"/>
   <rect x="990" y="430" width="120" height="80" fill="#f0fdf4" rx="12"/>
-  <text x="1050" y="460" text-anchor="middle" font-family="Arial, sans-serif" font-size="13" font-weight="bold" fill="#059669">TATA AGRIGO</text>
+  <text x="1050" y="460" text-anchor="middle" font-family="Arial, sans-serif" font-size="13" font-weight="bold" fill="#059669">TATA AGRICO</text>
   <circle cx="1020" cy="475" r="2" fill="#10b981"/>
   <circle cx="1035" cy="475" r="2" fill="#10b981"/>
   <circle cx="1050" cy="475" r="2" fill="#10b981"/>
