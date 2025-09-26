@@ -251,13 +251,6 @@ export default function AhamadAgencies() {
             ))}
           </div>
 
-          {/* Bottom CTA */}
-          <div className="text-center mt-16">
-            <div className="inline-flex items-center space-x-3 bg-gradient-to-r from-green-600 to-orange-500 text-white px-8 py-4 rounded-full font-semibold hover:shadow-lg transition-all duration-300 transform hover:scale-105">
-              <span>View All Products</span>
-              <ArrowRight size={20} />
-            </div>
-          </div>
         </div>
       </section>
 
