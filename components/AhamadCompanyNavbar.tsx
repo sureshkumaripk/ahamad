@@ -44,11 +44,11 @@ export default function AhamadCompanyNavbar() {
   ];
 
   const products = [
-    { name: 'TATA Shaktee', href: '/ahamad-co#tata-shaktee', icon: Building },
-    { name: 'Durashine', href: '/ahamad-co#durashine', icon: Wrench },
-    { name: 'TATA Kosh', href: '/ahamad-co#tata-kosh', icon: Hammer },
-    { name: 'TATA Wama', href: '/ahamad-co#tata-wama', icon: Zap },
-    { name: 'Palram', href: '/ahamad-co#palram', icon: Settings },
+    { name: 'TATA Shaktee', href: '/ahamad-co/tata-shaktee', icon: Building },
+    { name: 'Durashine', href: '/ahamad-co/durashine', icon: Wrench },
+    { name: 'TATA Kosh', href: '/ahamad-co/tata-kosh', icon: Hammer },
+    { name: 'TATA Wama', href: '/ahamad-co/tata-wama', icon: Zap },
+    { name: 'Palram Products', href: '/ahamad-co/palram-products', icon: Settings },
   ];
 
   return (
