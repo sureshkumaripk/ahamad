@@ -10,7 +10,7 @@ export default function Home() {
       <AhamadGroupNavbar />
       
       {/* Hero Section */}
-      <section className="relative min-h-screen flex items-center overflow-hidden pt-20 bg-gradient-to-br from-slate-50 via-blue-50 to-green-50">
+      <section className="relative min-h-screen flex items-center overflow-hidden pt-24 bg-gradient-to-br from-slate-50 via-blue-50 to-green-50">
         {/* Modern Abstract Background */}
         <div className="absolute inset-0">
           {/* Large geometric shapes */}
@@ -74,13 +74,12 @@ export default function Home() {
 
             {/* Main Heading */}
             <div className="space-y-6">
-              <h1 className="text-6xl md:text-7xl lg:text-8xl font-black leading-tight">
+              <h1 className="text-4xl md:text-5xl lg:text-6xl font-black leading-tight">
                 <span className="bg-gradient-to-r from-gray-800 via-blue-700 to-blue-800 bg-clip-text text-transparent">
-                  Ahamad
+                  Ahamad & Co
                 </span>
-                <br />
                 <span className="bg-gradient-to-r from-green-600 via-emerald-600 to-green-700 bg-clip-text text-transparent">
-                  Groups
+                  {" "}Groups
                 </span>
               </h1>
               <h2 className="text-2xl md:text-3xl lg:text-4xl font-light text-gray-600 max-w-4xl mx-auto leading-relaxed">
@@ -138,15 +137,6 @@ export default function Home() {
             </div>
           </div>
 
-          {/* Modern Scroll Indicator */}
-          <div className="absolute left-1/2 transform -translate-x-1/2" style={{ bottom: '-85px' }}>
-            <div className="flex flex-col items-center space-y-2">
-              <div className="w-6 h-10 border-2 border-gray-400 rounded-full flex justify-center">
-                <div className="w-1 h-3 bg-gradient-to-b from-green-500 to-emerald-600 rounded-full mt-2 animate-bounce"></div>
-              </div>
-              <p className="text-xs text-gray-500 font-medium tracking-wider uppercase">Scroll to Explore</p>
-            </div>
-          </div>
         </div>
       </section>
 

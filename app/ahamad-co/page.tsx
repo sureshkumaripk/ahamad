@@ -35,7 +35,7 @@ export default function AhamadCo() {
               <span className="text-sm font-medium tracking-wide">AUTHORIZED DEALER</span>
             </div>
 
-            <h1 className="text-5xl md:text-6xl lg:text-7xl font-bold leading-tight animate-pulse" style={{animationDuration: '4s', animationDelay: '1s'}}>
+            <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold leading-tight animate-pulse" style={{animationDuration: '4s', animationDelay: '1s'}}>
               <span className="block text-secondary-300 font-normal">
                 Premium Construction Materials
               </span>
