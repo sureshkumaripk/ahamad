@@ -2,6 +2,7 @@
 
 import { useState, useEffect } from 'react';
 import Link from 'next/link';
+import Image from 'next/image';
 import AhamadAgenciesNavbar from '@/components/AhamadAgenciesNavbar';
 import Footer from '@/components/Footer';
 import { 
@@ -116,11 +117,13 @@ export default function DITools() {
                 <div key={index} className="group">
                   <div className="bg-white rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-500 border border-accent-100 hover:border-secondary-200 transform hover:-translate-y-2 overflow-hidden">
                     <div className="aspect-square bg-gray-50 flex items-center justify-center p-6">
-                      <img 
-                        src={product.image} 
-                        alt={product.name}
-                        className="max-w-full max-h-full object-contain group-hover:scale-110 transition-transform duration-300"
-                      />
+                    <Image 
+                      src={product.image} 
+                      alt={product.name}
+                      width={300}
+                      height={300}
+                      className="max-w-full max-h-full object-contain group-hover:scale-110 transition-transform duration-300"
+                    />
                     </div>
                     
                     <div className="p-6">

@@ -1,6 +1,7 @@
 'use client';
 
 import { useState, useEffect } from 'react';
+import Image from 'next/image';
 import AhamadCompanyNavbar from '@/components/AhamadCompanyNavbar';
 import Footer from '@/components/Footer';
 import { 
@@ -52,7 +53,7 @@ export default function TataShaktee() {
       <section className="py-12 bg-white">
         <div className="container-custom">
           <p className="text-lg text-gray-700 text-center max-w-4xl mx-auto">
-            Tata Shaktee is Tata Steel's premier GC Sheet product particularly catering to consumer requirements in roofing applications.
+            Tata Shaktee is Tata Steel&apos;s premier GC Sheet product particularly catering to consumer requirements in roofing applications.
           </p>
         </div>
       </section>
@@ -140,13 +141,18 @@ export default function TataShaktee() {
             ].map((product, index) => (
               <div key={index} className="bg-gray-50 p-6 rounded-lg">
                 <div className="w-full h-48 bg-gray-200 rounded-lg mb-4 flex items-center justify-center overflow-hidden">
-                  <img 
+                  <Image 
                     src={product.image} 
                     alt={product.name}
+                    width={400}
+                    height={192}
                     className="w-full h-full object-cover"
                     onError={(e) => {
                       e.currentTarget.style.display = 'none';
-                      e.currentTarget.nextElementSibling.style.display = 'flex';
+                      const nextElement = e.currentTarget.nextElementSibling as HTMLElement;
+                      if (nextElement) {
+                        nextElement.style.display = 'flex';
+                      }
                     }}
                   />
                   <div className="w-full h-full bg-gray-200 rounded-lg flex items-center justify-center" style={{display: 'none'}}>

@@ -1,6 +1,7 @@
 'use client';
 
 import { useState, useEffect } from 'react';
+import Image from 'next/image';
 import AhamadCompanyNavbar from '@/components/AhamadCompanyNavbar';
 import Footer from '@/components/Footer';
 import { 
@@ -44,7 +45,7 @@ export default function TataWama() {
               </div>
               
               <p className="text-lg text-gray-600 leading-relaxed">
-                TATA WAMA coined from 'Walling Masters' is Tata Steel's latest 
+                TATA WAMA coined from &apos;Walling Masters&apos; is Tata Steel&apos;s latest 
                 offering in the retail and institutional segment catering to the 
                 walling and fencing needs of consumers. Developed exclusively 
                 for vertical applications.
@@ -55,9 +56,11 @@ export default function TataWama() {
             <div className="relative">
               <div className="bg-gradient-to-br from-blue-100 to-blue-200 rounded-2xl p-8 h-96 flex items-center justify-center">
                 <div className="text-center">
-                  <img 
+                  <Image 
                     src="https://www.vncgroup.com/assets/img/d-wama-logo.png" 
                     alt="TATA WAMA Logo" 
+                    width={320}
+                    height={320}
                     className="max-w-full max-h-80 object-contain mx-auto"
                   />
                 </div>
