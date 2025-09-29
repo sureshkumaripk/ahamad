@@ -32,7 +32,7 @@ export default function AhamadCo() {
           <div className="text-center max-w-4xl mx-auto space-y-8 mb-16">
             <div className="inline-flex items-center space-x-2 bg-white/20 backdrop-blur-sm rounded-full px-6 py-3 border border-white/30 animate-pulse" style={{animationDuration: '3s'}}>
               <Building size={20} className="animate-bounce" style={{animationDuration: '2s', animationDelay: '0.5s'}} />
-              <span className="text-sm font-medium tracking-wide">AUTHORIZED DISTRIBUTOR</span>
+              <span className="text-sm font-medium tracking-wide">AUTHORIZED DEALER</span>
             </div>
 
             <h1 className="text-5xl md:text-6xl lg:text-7xl font-bold leading-tight animate-pulse" style={{animationDuration: '4s', animationDelay: '1s'}}>
